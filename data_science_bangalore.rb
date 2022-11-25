@@ -92,8 +92,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                                     :name => 'Bhavik Rasyara',
                                     :position => 'Boston Consulting Group',
                                     :logo => 'bain'},]},
-                :curriculum_alt => {:content => {:title => "Our curriculum will prepare you to <b><span class=\"highlight\">tackle the toughest</span> 
-                    problems in Data Science and ML</b>", :subtitle => "Based on a simple 30 minutes MCQ test, you enter Beginner / Intermediate / Advanced sections. 
+                :curriculum_alt => {:content => {:title => "<h2>Our curriculum will prepare you to <b><span class=\"highlight\">tackle the toughest</span> 
+                    problems in Data Science and ML</b></h2>", :subtitle => "Based on a simple 30 minutes MCQ test, you enter Beginner / Intermediate / Advanced sections. 
                     Beginner and Intermediate sections cover some additional basic topics that Advanced students do not need.", 
                     :download_btn => "DOWNLOAD DETAILED CURRICULUM", :link => "https://content.interviewbit.com/Scaler-Data-Science-Machine-Learning-Brochure.pdf", 
                     :courses => [{:name => "Beginner", :icon => "academy/svg/beginner.svg", :active_icon => "academy/svg/beginner-active.svg", 

@@ -6,34 +6,34 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
       content = {:metadata => {:program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
         {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
         {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
-        content.merge!(:banner => {:heading => "<b>Master Web Development with the Scaler Academy Program</b>", 
+        content.merge!(:banner => {:heading => "<h1><b>Master Web Development with the Scaler Academy Program</b></h1>", 
                 :content => ["Get down and deep into how HTML, CSS and JavaScript work together, and build beautiful websites", 
                 "Master the Fundamentals of Web Development, Web Programming, and Database Management from scratch", 
                 "Learn how popular web frameworks like ReactJS and NodeJS are used in backend and frontend"],
                 :background_image => "course_page/banner/bannernew.png",
                 :title => "Build An Impressive Portfolio and Kickstart Your Career"})
-        content.merge!(:briefing => {:heading => "An Introduction to <b><span class='highlight'>Web Development</span>?</b>",
-                :places => [{:name => "<b>What is Web Development?</b>",
+        content.merge!(:briefing => {:heading => "<h2>An Introduction to <b><span class='highlight'>Web Development</span>?</b></h2>",
+                :places => [{:name => "<h3><b>What is Web Development?</b></h3>",
                 :desc => "There's a lot of work that's done behind the scenes to make a website look great, work well, and provide 
                 an excellent user experience. Yes, we are referring to web development which involves building, creating, 
                 and maintaining new and existing websites. It can range from developing a simple static page of plain text 
                 to complicated web applications, social networking pages, and electronic businesses. Web development includes 
                 aspects such as web design, web programming, and database management. The presence of these tools makes 
                 it easier for anyone wanting to create or edit their own website."},
-                {:name => "<b>Why is Web Development important?</b>",
+                {:name => "<h3><b>Why is Web Development important?</b></h3>",
                 :desc => "The current world's environment makes it almost impossible to do business without a good website, 
                 and this is where web design and web development come into play. Maintaining an updated website means owning 
                 a key to the primary platform that showcases your products and services to the netizens. 
                 The best way to do that is through learning web development as it conveys information the right way. 
                 Additionally, you can tackle SEO, attract potential customers/clients, convey messages, and conduct e-business."},
-                {:name => "<b>Why should you choose a career in Web Development?</b>",
+                {:name => "<h3><b>Why should you choose a career in Web Development?</b></h3>",
                 :desc => "Web development is in high demand and well paid around the globe, making it a great career option. Having 
                 a solid grasp of Web Development will help you to secure a promising career right after you complete your course. 
                 Besides, this field is constantly in demand; evolving and challenging, which means you’ll always have many chances 
                 to explore new tools, technologies and learn new skills. The high demand, easy-to-learn and fun-to-experience 
                 lifestyle of a web developer makes it an ideal career choice for someone seeking to learn code. Having said that,  
                 Web Development is the field that provides a plethora of opportunities for hands-on learning."}]})
-        content.merge!(:glance => {:heading => "<span class='highlight'>Key highlights</span> of the Scaler Academy's <b>Web Development Program</b>",
+        content.merge!(:glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's <b>Web Development Program</b></h2>",
                 :sub_heading => "Learn Web Development as part of the Scaler Academy course and get a head-start on your career as a Web Developer.",
                 :cards => [{:img => "academy/svg/at-a-glance/structured.svg", :title => "<b>Structured, 
                 industry-vetted curriculum</b>"},
@@ -700,7 +700,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     "job_description"=>"You will have access to job postings and evaluation tests across our 500+ employer partners. 
                     These employers are across sizes and industries 
                     (tech MNCs and startups, software product, BFSI) and we strive to help you in case you need a referral"})
-        content.merge!(:testimonials => {:heading => "Our success <span class=\"highlight\">lies in our learners</span> success stories", 
+        content.merge!(:testimonials => {:heading => "<h2>Our success <span class=\"highlight\">lies in our learners</span> success stories</h2>", 
                     :sub_title => "Read the reviews by Scaler Alumni on how Scaler Academy Program has helped them become solid certified Web Developers",
                     :content => [{:id => "testimonial_modal_A1", :personImage => "academy/testimonial_images/Mayur.png", :name => "Mayur Kharche", 
                     :title => "SDE3", :companyName => "walmart", :mediumName => "Scaler", :mediumUrl => "academy/svg/scaler-logo.svg", 

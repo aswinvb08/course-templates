@@ -20,7 +20,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               {:url => "#faq", :text => "FAQ"}]},
           :banner => { :breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
                     {:cta => "<b>Academy</b>", :link => "https://www.scaler.com/academy/"},
-                    {:cta => "<b>System Design</b>"}], :heading => "<b>Learn System Design Fundamentals and Build Systems At Scale</b>", 
+										{:cta => "<b>System Design</b>"}], :heading => "<h1><b>Learn System Design Fundamentals and Build Systems At Scale</b></h1>", 
               :content => ["Learn how to transform abstract statements into practical 
               software design and implement them in real life scenarios", 
               "Understand the inner workings of database systems, caches, messaging 
@@ -29,8 +29,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               applications and games that serve millions"],
               :background_image => "course_page/banner/bannernew.png",
               :title => "Take the First Step Towards Mastering System Design"},
-          :briefing => {:heading => "Why <b><span class='highlight'>System Design</span></b>?",
-              :places => [{:name => "<b>What is System Design?</b>",
+          :briefing => {:heading => "<h2>Why <b><span class='highlight'>System Design</span></b>?</h2>",
+              :places => [{:name => "<h3><b>What is System Design?</b></h3>",
               :desc => "System Design is the systematic approach that covers a wide range of 
               engineering concepts and principles for designing scalable systems that are 
               modular, reusable, and extensible.<br>Low-Level Design is the process of designing 
@@ -41,7 +41,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               the system, and how caching is done to optimize the system for fast response 
               times and reduced costs, etc. This includes choosing what kind of database to use, 
               like Cassandra or MySQL or something else, and making choices like SQL vs. NoSQL."},
-              {:name => "<b>Why is System Design important?</b>",
+              {:name => "<h3><b>Why is System Design important?</b></h3>",
               :desc => "A software engineer who understands both High Level and Low Level Design 
               performs better. It enables an engineer to make architectural decisions to make 
               the software system efficient and scalable while saving an organization's cost. 
@@ -53,7 +53,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               <li>Save long-term engineers costs for a company</li>
               <li>Make software systems able to handle changing product 
               requirements and also handle large scale</li>"},
-              {:name => "<b>What are the key topics to consider when designing a system?</b>",
+              {:name => "<h3><b>What are the key topics to consider when designing a system?</b></h3>",
               :desc => "To become a jack of systems design, you need to take into account 
               the following when building a software system:
               <li>Understand the product requirements (current as well as future) 
@@ -62,7 +62,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               Schema Diagrams, Architectural High-Level Diagrams</li>
               <li>Understand the pros and cons of every software system like Databases, 
               Caches, etc., and when to use them</li>"}]},
-          :glance => {:heading => "<span class='highlight'>Key Highlights</span> of the System Design Module in the Scaler Academy Program",
+          :glance => {:heading => "<h2><span class='highlight'>Key Highlights</span> of the System Design Module in the Scaler Academy Program</h2>",
               :sub_heading => "Become an expert at System Design with Scaler Academy. A necessary skill for any top software engineer, enable 
               yourself to learn these important concepts with ease and swiftness.",
               :cards => [{:img => "academy/svg/at-a-glance/structured.svg", :title => "Offers an industry-vetted <b>structured curriculum</b>"},
@@ -71,8 +71,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Live classes</b> by experienced professionals and alumni"},
               {:img => "course_page/svg/Career-Support.svg", :title => "<b>1:1 mentorship</b> from industry veterans on a <b>regular basis</b>"},
               {:img => "course_page/svg/Mentorship.svg", :title => "<b>Career support</b> through a dedicated team, strong alumni network"}]},
-          :curriculum => {:features => {:title => "<b><span class=\"highlight\">Tried & Tested</span> Curriculum</b>, 
-              curated <b>by Industry Experts</b>", :subtitle => "", :market => {:head => "Products in the markets are", 
+          :curriculum => {:features => {:title => "<h2><b><span class=\"highlight\">Tried & Tested</span> Curriculum</b>, 
+              curated <b>by Industry Experts</b></h2>", :subtitle => "", :market => {:head => "Products in the markets are", 
               :items => [{:img => "course_page/svg/unstrct.svg", :desc => {:title => "Unstructured", 
               :subtitle => "Scattered articles, blogs & videos need extra effort to stitch it all together"}}, 
               {:img => "course_page/svg/theory.svg", :desc => {:title => "Theoretical", :subtitle => "Limited practical work"}}, 
@@ -86,7 +86,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               {:img => "academy/svg/personalised.svg", :desc => {:title => "Personalised", :subtitle => "Topics, peers & pace of learning are 
               optimized for your needs"}}, {:img => "academy/svg/industry-relevant.svg", :desc => {:title => "Industry-relevant", 
               :subtitle => "Industry-tested curriculum to make you job ready"}}]}}, 
-              :content => {:title => "<b> Scaler Academy's Curriculum</b> is designed to make you a <span class=\"highlight\"><b>solid engineer</b></span>", 
+              :content => {:title => "<h2><b> Scaler Academy's Curriculum</b> is designed to make you a <span class=\"highlight\"><b>solid engineer</b></span></h2>", 
               :subtitle => "Based on a simple 30 minutes MCQ test, you enter <b>Beginner / Intermediate / Advanced sections</b>. 
               Beginner and Intermediate sections cover some <b>additional basic topics</b> that Advanced students do not need.", 
               :courses => [{:name => "Beginner", :icon => "academy/svg/beginner.svg", :active_icon => "academy/svg/beginner-active.svg", 
@@ -147,7 +147,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               "Database sharding and replicas","Microservices and Containerisation","Zookeeper",
               "Kafka","Quadtrees (nearest neighbors)","Design S3","Design Distributed crawler",
               "Design Hotstar","Design Google Search Typeahead","Design Quora","Design Facebook Messanger"]}]}}},
-          :career => {:heading => "<span class=\"highlight\">Career Services</span>", 
+          :career => {:heading => "<h2><span class=\"highlight\">Career Services</span></h2>", 
               :sub_heading => "Along with upskilling and preparing you to be a solid engineer, we will help 
               you with your job search and interview preparation as well!", 
               :cards => [{:img => "academy/svg/community.svg", 
@@ -272,7 +272,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               "job_description"=>"You will have access to job postings and evaluation tests across our 500+ employer partners. 
               These employers are across sizes and industries 
               (tech MNCs and startups, software product, BFSI) and we strive to help you in case you need a referral"},
-          :testimonials => {:heading => "Our success <span class=\"highlight\">lies in our learners</span> success stories.", 
+         :testimonials => {:heading => "<h2>Our success <span class=\"highlight\">lies in our learners</span> success stories.</h2>", 
               :sub_title => "Read the reviews by Scaler Alumni on how Scaler Academy Program has helped become solid certified System Design Engineer",
               :content => [{:id => "testimonial_modal_A1", :personImage => "academy/testimonial_images/Yeswanth.jpg", :name => "Yeswanth kokku", 
               :title => "SDE3", :companyName => "ZS", :mediumName => "", :mediumUrl => "academy/svg/scaler-logo.svg", 
