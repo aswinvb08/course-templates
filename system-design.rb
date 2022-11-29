@@ -20,7 +20,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               {:url => "#faq", :text => "FAQ"}]},
           :banner => { :breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
                     {:cta => "<b>Academy</b>", :link => "https://www.scaler.com/academy/"},
-										{:cta => "<b>System Design</b>"}], :heading => "<h1><b>Learn System Design Fundamentals and Build Systems At Scale</b></h1>", 
+{:cta => "<b>System Design</b>"}], :heading => "<h1><b>Learn System Design Fundamentals and Build Systems At Scale</b></h1>", 
               :content => ["Learn how to transform abstract statements into practical 
               software design and implement them in real life scenarios", 
               "Understand the inner workings of database systems, caches, messaging 
