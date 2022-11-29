@@ -94,8 +94,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         :position => 'Tower Research Capital / ShareChat',
                         :logo => 'ubers'},  ]},
                 :curriculum_alt => {:content =>
-                    {:title => "Our curriculum will prepare you to <b><span class=\"highlight\">tackle the toughest</span> 
-                    problems in Data Science and Machine Learning (ML)</b>", :subtitle => "Based on a simple 30 minutes MCQ test, you enter Beginner / Intermediate / Advanced sections. 
+                    {:title => "<h2>Our curriculum will prepare you to <b><span class=\"highlight\">tackle the toughest</span> 
+                    problems in Data Science and Machine Learning (ML)</b></h2>", :subtitle => "Based on a simple 30 minutes MCQ test, you enter Beginner / Intermediate / Advanced sections. 
                     Beginner and Intermediate sections cover some additional basic topics that Advanced students do not need.", 
                     :download_btn => "DOWNLOAD DETAILED CURRICULUM", :link => "https://content.interviewbit.com/Scaler-Data-Science-Machine-Learning-Brochure.pdf", 
                     :courses => [

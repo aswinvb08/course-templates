@@ -6,18 +6,18 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
             content = {:metadata => {:program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
                     {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
                     {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
-            content.merge!(:banner => {:heading => "<b>Master Data Structures and Algorithms With the Scaler Academy Program</b>", 
+            content.merge!(:banner => {:heading => "<h1><b>Master Data Structures and Algorithms With the Scaler Academy Program</b></h1>", 
                     :content => ["Secure product interviews with understanding of crucial data structures and algorithms, and their implementation", 
                     "Build intuition on the inner workings of various DSA, a foundational skill for any top software engineer", 
                     "Clear your concepts and know which data structure to use for the most optimum build"],
                     :background_image => "course_page/banner/bannernew.png",
                     :title => "Master The Fundamentals of Computer Programming with Scaler Academy"})
-            content.merge!(:briefing => {:heading => "<span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b>",
-                    :places => [{:name => "<b>What are Data Structures?</b>",
+            content.merge!(:briefing => {:heading => "<h2><span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b></h2>",
+                    :places => [{:name => "<h3><b>What are Data Structures?</b></h3>",
                     :desc => "Data Structures are typically used to organize, process, retrieve and store data on computers 
                     for efficient use. Having the right understanding and using the right data structures 
                     helps software engineers write the right code."},
-                    {:name => "<b>What are the types of Data Structures?</b>",
+                    {:name => "<h3><b>What are the types of Data Structures?</b></h3>",
                     :desc => "There are two types of Data structures -
                     <li><b>Linear Data structure:</b> If the elements of a data structure result in a sequence or a 
                     linear list then it is called a Linear data structure. Every data element is connected 
@@ -28,7 +28,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     not done in a sequential manner, then it is a Non-linear data structure. 
                     Its elements are not sequentially connected, and every element can attach 
                     to another element in multiple ways. Example - Hierarchical data structure like trees.</li>"},
-                    {:name => "<b>Why are Data Structures important?</b>",
+                    {:name => "<h3><b>Why are Data Structures important?</b></h3>",
                     :desc => "Data structures are a key component of Computer Science and help in understanding the 
                     nature of a given problem at a deeper level. They're widely utilized in Artificial Intelligence, 
                     operating systems, graphics, and other fields. If the programmer is unfamiliar with data 
@@ -39,7 +39,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     so it will also help you in your day-to-day work</li> 
                     <li>Knowing when to apply the proper data structures is an important step to write
                      efficient code by managing data properly</li>"}]})
-            content.merge!(:glance => {:heading => "<span class='highlight'>Key highlights</span> of the Scaler Academy's program",
+            content.merge!(:glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's program</h2>",
                     :sub_heading => "Our program is designed to help you become an expert in Data structures and Algorithms and ace product interviews to scale up in your tech career.",
                     :cards => [{:img => "academy/svg/at-a-glance/structured.svg", :title => "<b>Structured, 
                     industry-vetted curriculum</b>"},
@@ -583,7 +583,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         ]
                         }
             )
-            content.merge!(:career => {:heading => "<span class=\"highlight\">Career Services</span>", 
+            content.merge!(:career => {:heading => "<h2><span class=\"highlight\">Career Services</span></h2>", 
                     :sub_heading => "Along with upskilling and preparing you to be a solid engineer, we will help 
                     you with your job search and interview preparation as well!", 
                     :cards => [{:img => "academy/svg/employer.svg", :content => "Access job opportunities 
@@ -707,8 +707,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         "job_description"=>"You will have access to job postings and evaluation tests across our 500+ employer partners. 
                         These employers are across sizes and industries 
                         (tech MNCs and startups, software product, BFSI) and we strive to help you in case you need a referral"})
-            content.merge!(:testimonials => {:heading => "Our success <span class=\"highlight\">lies in our learners</span> success stories", 
-                        :sub_title => "Read the reviews by Scaler Alumni on how Scaler Academy Program has helped them become solid Data structures and Algorithms Experts",
+            content.merge!(:testimonials => {:heading => "<h2>Our success <span class=\"highlight\">lies in our learners</span> success stories", 
+                        :sub_title => "Read the reviews by Scaler Alumni on how Scaler Academy Program has helped them become solid Data structures and Algorithms Experts</h2>",
                         :content => [{:id => "testimonial_modal_A1", :personImage => "academy/testimonial_images/Vishal.jpg", :name => "Vishal Pattni", 
                         :title => "SDE3", :companyName => "Townscript", :mediumName => "", :mediumUrl => "academy/svg/scaler-logo.svg", 
                         :desc => "I am elated to share that I have joined Townscript as a Software Engineer. All thanks to Scaler Academy for providing me with the guidance, skills, and knowledge I needed. When it comes to preparing for Product companies, there is a vast ocean of resources where one can easily get lost. But the curriculum at Scaler is well-framed and industry-vetted that I was able to learn all that is expected of a Software Engineer. 
