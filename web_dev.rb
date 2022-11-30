@@ -861,7 +861,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     low as Rs 9,811 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}, 
                     {:id => "tuition_modal_two", :text => "SCHOLARSHIP DETAILS", :link =>""}]})
-        faq_list1 = [{:heading => "<b>Are web developers in demand in 2023?</b>", 
+        faq_list1 = [{:heading => "<b>Are web developers in demand in 2021?</b>", 
                     :desc => "Yes, they are highly demanded. For those who don't know, web development 
                     is one of the rapidly growing and popular industries in the world. Many reports 
                     suggest the need for web developer jobs will grow by thirteen percent in the coming years."},
