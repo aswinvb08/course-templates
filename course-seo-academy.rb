@@ -7,7 +7,7 @@ def up
     :banner_alt => {
       :heading => "Accelerate your Career in Software Development",
       :content => "A structured, flexible & guided learning program, every software developer deserves!",
-      :flash_text => "Next cohort for working professionals begins on <b>9th August</b>",
+      :flash_text => "Next cohort for working professionals begins on <b>20th December</b>",
       :image1 => "us/girl_smiling.png",
       :image2 => "us/girl_working.png",
       :image3 => "us/boy_looking.png",
