@@ -3,7 +3,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
       return unless Rails.is_scaler?
   
       Course.find_by(:slug => "data-science-course-training-in-bangalore")&.destroy
-      content = {:metadata => {:jsonld => "true", :next_batch_details => {:course_slug => "ds", :course_type => "intermediate"}, :program => "data-science", :header => {:logo => “scaler/png/scaler-data-science.png”, :path => "/data-science-course/", :logo_alt => "Scaler Data Science"} , 
+      content = {:metadata => {:jsonld => "true", :next_batch_details => {:course_slug => "ds", :course_type => "intermediate"}, :program => "data-science", :header => {:logo => 'scaler/png/scaler-data-science.png', :path => "/data-science-course/", :logo_alt => "Scaler Data Science"} , 
                     :links => [{:url => "#curriculum", :text => "Curriculum"}, 
                     {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
                     {:url => "#testimonial", :text => "Review"}, 
