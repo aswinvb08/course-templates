@@ -97,59 +97,702 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                                         :name => 'Bhavik Rasyara',
                                         :position => 'Boston Consulting Group',
                                         :logo => 'bain'},]},
-                :curriculum_alt => {:content => {:title => "<h2>Our curriculum will prepare you to <b><span class=\"highlight\">tackle the toughest</span> 
-                    problems in Data Science and ML</b></h2>", :subtitle => "Based on a simple 30 minutes MCQ test, you enter Beginner / Intermediate / Advanced sections. 
-                    Beginner and Intermediate sections cover some additional basic topics that Advanced students do not need. ", 
-                    :download_btn => "DOWNLOAD DETAILED CURRICULUM", :link => "https://content.interviewbit.com/Scaler-Data-Science-Machine-Learning-Brochure.pdf", 
-                    :courses => [{:name => "Beginner", :icon => "academy/svg/beginner.svg", :active_icon => "academy/svg/beginner-active.svg", 
-                    :desc => "I know bare minimum coding. Starting from scratch", :enrollment_status => "Coming soon!", 
-                    :duration => "15 months Course"}, {:name => "Intermediate", :icon => "academy/svg/intermediate.svg", 
-                    :active_icon => "academy/svg/intermediate-active.svg", :desc => "I know coding in one programming language. 
-                    Can build basic applications.", :enrollment_status => "Enrolment open", :duration => "13 months Course"}, 
-                    {:name => "Advanced", :icon => "academy/svg/advanced.svg", :active_icon => "academy/svg/advanced-active.svg", 
-                    :desc => "I am good at coding. I know basic problem solving, data structures, algorithms. Can build basic to 
-                    advanced applications.", :enrollment_status => "Enrolment open", :duration => "11 months Course"}], 
-                    :basic_pointers => [{:title => "Introduction to Programming", :clock_icon => "data_science/svg/clock1.svg", 
-                    :duration => "8 Weeks", :syllabus => ["Decision trees & control", "Binary number system", "Strings", "Arithmetic operators", "Loops"], 
-                    :mark => "academy/svg/mark1.svg", :arrow => "academy/svg/arrow1.svg"}, {:title => "Programming - Intermediate", :clock_icon => "data_science/svg/clock2.svg", 
-                    :duration => "8 Weeks", :syllabus => ["Introduction to Number systems and Bit Manipulations", "Time Complexity Analysis", "Arrays Techniques", 
-                    "Basic Maths for Programming", "Sorting and Hashing Libraries", "Recursion", "OOPS"], 
-                    :mark => "academy/svg/mark2.svg", :arrow => "academy/svg/arrow1.svg"}, 
-                    {:title => "Statistical Analysis & Data Analytics", :clock_icon => "data_science/svg/clock1.svg", 
-                    :duration => "8 Weeks", :syllabus => ["Python, Jupyter, Numpy, Pandas", "Git, Linux Terminal, File I/O", 
-                    "Statistics, Probability, Linear Algebra", "Distributions, Sampling, Hypothesis Testing", "Databases, SQL, 
-                    Index, Partition, Schema", "Web API, Scraping, Automation, Flask"], :mark => "academy/svg/mark3.svg"}], 
-                    :pointers => [{:title => "Data Science & Machine Learning", :clock_icon => "data_science/svg/clock2.svg", 
-                    :duration => "8 Weeks", :syllabus => ["EDA, Data wrangling, Feature Engineering", "Supervised & Unsupervised Models", 
-                    "Ensembling", "Factor analysis", "Predictive Modeling & Forecasting", "Recommender system"], :mark => "academy/svg/mark1.svg", 
-                    :arrow => "academy/svg/arrow1.svg"}, {:title => "ML Engineering - Deep Learning & Big Data", :clock_icon => "data_science/svg/clock3.svg", 
-                    :duration => "12 Weeks", :syllabus => ["Keras, TensorFlow, PyTorch", "Neural Networks, Computer Vision, NLP", "Reinforcement Learning", 
-                    "Research Papers in Deep Learning", "Warehouse - AWS S3, HDFS, HBase, NoSQL", "Ingestion - Kafka", "Analysis - PySpark, YARN, Airflow, Hive"], 
-                    :mark => "academy/svg/mark2.svg", :arrow => "academy/svg/arrow1.svg"}, {:title => "Programming - Advanced", 
-                    :clock_icon => "data_science/svg/clock3.svg", :duration => "15 Weeks", :syllabus => ["Time Complexity, Arrays, Strings, Binary Search, 
-                    2 Pointers, Recursion, Hashing, Sorting, Bit manipulation", "Stacks, Queues, Linked Lists, Trees, Tries, Heap", "Greedy, DP, Graphs", 
-                    "DB and System Design"], :mark => "academy/svg/mark3.svg"}], "special_courses"=>[{:name => "Backend Specialisation", 
-                    :clock_icon => "academy/svg/clock4.svg", :duration => "15 Weeks", "pointers"=>["System Design (HLD + LLD) with project", 
-                    "MVC, REST APIs, ORM, SpringBoot, Views, Database Indexes, Multithreading"]}, {:name => "Fullstack Specialisation", 
-                    :clock_icon => "academy/svg/clock5.svg", :duration => "15 Weeks", "pointers"=>["System Design (HLD + LLD) with project", 
-                    "Building a server, intro to MVC, web architecture, HTML, CSS, Javascript, Node.js, Backend architecture, MongoDB, React / Redux"]}], 
-                    :advanced_electives => {:title => "<b>Advanced Electives</b> (Optional)", :subtitle => "Starting from the March'21 batches, 
-                    the electives stated below will taught after the entire course is completed. Learners can take up all electives or just a few of 
-                    them and they are completely optional. We believe these electives can help engineers further accelerate their carrer and hence we 
-                    advice you to opt for them!", :modal_title => "<b>Introducing Advanced Electives</b>", :modal_subtitle => "Introducing 3 
-                    elective courses to our curriculum, to help you go above and beyond in your journey to being the best programmer you can be", 
-                    :new_badge_icon => "academy/svg/elective_new_badge.svg", :subjects => [{:title => "Advanced DSA",
-                    :clock_icon => "academy/svg/clock6.svg", :icon => "academy/svg/advanced_dsa.svg", :duration => "4 weeks", 
-                    :syllabus => ["Combinatorics and Probability", "Matrix exponentiation", "Advanced Trees: Segment Tree, k-D Tree", "Advanced Dynamic Programming 1", 
-                    "Advanced Graphs 1: Bridges, Articulation point", "Advanced Graphs 2: Network Flow", "Miscellaneous company problem discussion"]}, 
-                    {:title => "Concurrent Programming", :clock_icon => "academy/svg/clock2.svg", :icon => "academy/svg/concurrent_programming.svg", 
-                    :duration => "4 weeks", :syllabus => ["Introduction to Concurrency", "Concurrency in Java", "Concurrency in Java 2 + Exercise", "Parallelization 1", "Parallelization 2", 
-                    "Concurrent Programming 1", "Concurrent Programming 2", "Assignment Discussion"]}, 
-                    {:title => "Product Management", :clock_icon => "academy/svg/clock3.svg", :icon => "academy/svg/product_management.svg", :duration => "4 weeks", 
-                    :syllabus => ["Introduction to Product Management", "Product Vision and Measurement", "Roadmaps and Prioritization", 
-                    "The Spring Process and Product Leadership", "Product Development 1", "Product Development 2"]}]}, 
-                    "notes"=>[{:icon => "", :title => "Price", :desc => "No difference in price between the two sections"}, 
-                    {:icon => "", :title => "Eligibility", :desc => "Any working professional who has graduated on or before 2022"}]}},
+                :academy_curriculum => {
+                    :sections => [{:heading=>"Beginner", :duration=>"14 months"}, {:heading=>"Intermediate", :duration=>"12 months"}, {:heading=>"Advanced", :duration=>"10 months"}],
+                    :modules => [{
+                    :label => "Module - 1",
+                    :name => "Introduction to Programming",
+                    :duration => "2 months",
+                    :content => {
+                      :duration => "2 months",:module_detail_pointers => [{
+                        :name => "Introduction to Programming",
+                        :module_detail_pointers_detail => [{
+                          :name => "Flowcharts, Data Types, Operators",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Conditional Statements & Loops",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Functions",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Strings",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "List, Tuple, Dictionary, Set",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Basic Math Refresher - Matrix Algebra, Number Systems",
+                          :module_detail_pointers_details => []
+                        }]
+                      }],:read_next => "Read Next: Module 2 - Programming Constructs"
+                    }
+                  }, {
+                    :label => "Module - 2",
+                    :name => "Programming Constructs",
+                    :duration => "2 months",
+                    :content => {
+                      :duration => "2 months",:module_detail_pointers => [{
+                        :name => "Programming Constructs",
+                        :module_detail_pointers_detail => [{
+                          :name => "Python Refresher",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Advanced Topics",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Lambda Functions, List Comprehension",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Functional Programming",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Decorator, Args, Kwargs",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Object Oriented Programming",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Inheritance, Polymorphism, Overriding",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Exception Handling",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Modules, Package, Library, Built-in Modules",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Basic DSA & Problem Solving",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Time complexity",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bit Manipulation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Searching, Sorting, Recursion",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Basic Math Refresher - Combinatorics, Coordinate Geometry, Calculus",
+                          :module_detail_pointers_details => []
+                        }]
+                      }],:read_next => "Read Next: Module 3 - Data Science Common Core"
+                    }
+                  }, {
+                    :label => "Module - 3",
+                    :name => "Data Science Common Core",
+                    :duration => "4 months",
+                    :content => {
+                      :duration => "4 months",:module_detail_pointers => [{
+                        :name => "Data Science Tools",
+                        :module_detail_pointers_detail => [{
+                          :name => "Relational, Non-relational, ER diagrams",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "SQL Commands",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Inline Calculations",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Filtering, Group By, Aggregate Functions",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Joins, SubQueries, CTEs and Views",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Window Functions, Ranking Functions",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Time Series Analysis",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Tableau, Data Visualisations",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Building practical monitoring dashboards",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Data Science Libraries",
+                        :module_detail_pointers_detail => [{
+                          :name => "Numpy",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Pandas",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Matplotlib, Seaborn",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Web API",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Web Scraping",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Data Science Maths",
+                        :module_detail_pointers_detail => [{
+                          :name => "Probability",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bayes Theorem",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Distributions",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Descriptive Statistics, outlier treatment",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Confidence Interval",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Central limit theorem",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Data Science Fundamentals",
+                        :module_detail_pointers_detail => [{
+                          :name => "Hypothesis test, AB testing",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "ANOVA",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Correlation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "EDA, Feature Engineering, Missing value treatment",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Experiment Design",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Regex, NLTK, OpenCV",
+                          :module_detail_pointers_details => []
+                        }]
+                      }],:read_next => "Read Next: Module 4 - Specializations"
+                    }
+                  }, {
+                    :label => "Module - 4",
+                    :name => "Specializations",
+                    :duration => "5 months",
+                    :content => {
+                      :duration => "5 months",:module_detail_pointers => [{
+                        :title => "Data Science and Machine Learning with Analytics",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Machine Learning 1",
+                        :module_detail_pointers_detail => [{
+                          :name => "Linear Regression, Gradient Descent",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Multicollinearity, VIF, R-square, Heteroscedasticity",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Sklearn",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Polynomial Regression",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bias-Variance trade-off",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Regularisation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Logistic Regression, Sigmoid",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "AUC, ROC, Precision-Recall Curve",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Confusion matrix, Specificity",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "KNN",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Decision Trees, Ensemble learning, Bagging, Boosting ",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Support Vector Machine",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bayesian Machine Learning",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Machine Learning 2",
+                        :module_detail_pointers_detail => [{
+                          :name => "Clustering, K-means",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hierarchical clustering",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Recommender systems",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Time series, ARIMA, SARIMA, SARIMAX",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Facebook Prophet",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "PCA",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Outlier detection",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Introduction to Deep Learning",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Tools",
+                        :module_detail_pointers_detail => [{
+                          :name => "Cloud",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "SQL",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "BigQuery",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Advanced Analytics using SQL",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Dataiku DSS",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Capstone Project on Advanced Analytics",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Business Intelligence",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Data Visualization",
+                        :module_detail_pointers_detail => [{
+                          :name => "Advanced Tableau",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Excel",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Capstone project Data Visualization",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Dashboarding and Storytelling",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :choice => "Or",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :title => "Data Science and Deep Learning with AI",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Maths for Machine Learning",
+                        :module_detail_pointers_detail => [{
+                          :name => "Classification",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hyperplane",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Halfspaces",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Calculus",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Optimization",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Gradient Descent",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Eigenvalues, Eigenvectors",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Principal Component Analysis",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Machine Learning 1",
+                        :module_detail_pointers_detail => [{
+                          :name => "Linear Regression, Gradient Descent",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Multicollinearity, VIF, R-square, Heteroscedasticity",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Sklearn",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Polynomial Regression",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bias-Variance trade-off",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Regularisation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Logistic Regression, Sigmoid",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "AUC, ROC, Precision-Recall Curve",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Confusion matrix, Specificity",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "KNN",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Decision Trees, Ensemble learning, Bagging, Boosting",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Support Vector Machine",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bayesian Machine Learning",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Machine Learning 2",
+                        :module_detail_pointers_detail => [{
+                          :name => "Clustering",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "K-means",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hierarchical clustering",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Density-based clustering",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Recommender systems",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Time series - ARIMA, SARIMA, SARIMAX, Facebook Prophet",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "PCA, t-SNE, UMAP",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "High dimensional visualization",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Outlier detection",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Neural Networks",
+                        :module_detail_pointers_detail => [{
+                          :name => "Perceptrons",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Neural Networks",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hidden Layers",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Tensorflow",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Keras",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Forward and Back Propagation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Multilayer Perceptrons (MLP)",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Callbacks",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Tensorboard",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Optimization",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hyperparameter tuning",
+                          :module_detail_pointers_details => []
+                        }]
+                      }],:read_next => "Read Next: Module 5 - Electives"
+                    }
+                  }, {
+                    :label => "Module - 5",
+                    :name => "Electives",
+                    :duration => "1 month",
+                    :content => {
+                      :duration => "1 month",:module_detail_pointers => [{
+                        :title => "Computer Vision",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Convolutional Neural Nets",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Data Augmentation",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Transfer Learning",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "CNN",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "CNN hyperparameters tuning & BackPropagation",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "CNN Visualization",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Popular CNN Architecture - Alex, VGG, ResNet, Inception, EfficientNet, MobileNet",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Object Segmentation, Localisation, and Detection",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Generative Models, GANs",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Attention Models",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Siamese Networks",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Advanced CV",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :choice => "And/Or",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :title => "Natural Language Processing",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Text Processing and representation",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Tokenization, Stemming, Lemmatization",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Vector space modeling, Cosine Similarity, Euclidean Distance",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "POS tagging, Dependency parsing",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Topic Modeling, Language Modeling",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Embeddings",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Recurrent Neural Nets",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Information Extraction",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "LSTM",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Attention",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Named Entity Recognition",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Transformers",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "HuggingFace",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "BERT",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :choice => "And/Or",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :title => "ML Ops and Data Engineering",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Streamlit",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Flask",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Containerisation, Docker",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Experiment Tracking",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "MLFlow",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "CI/CD",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "GitHub Actions",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "ML System Design",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "AWS Sagemaker, AWS Data Wrangler, AWS Pipeline",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Apache Spark",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Spark MLlib",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :choice => "And/Or",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :title => "Product Analytics",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Framework to address product sense questions",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Diagnostics",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Metrics, KPI",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Product Design & Development",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Guesstimates",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Product Cases from Netflix, Stripe, Instagram",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :choice => "And/Or",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :title => "Advanced DSA and CS Fundamentals (4 Months)",
+                        :module_detail_pointers_detail => []
+                      }, {
+                        :name => "Problem Solving Techniques",
+                        :module_detail_pointers_detail => [{
+                          :name => "Time Complexity Analysis",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Arrays",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Bit Manipulation",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Maths",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Recursion & Sorting",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Binary Search & 2 Pointers",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Hashing",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Pattern Matching Algorithms",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Data Structures",
+                        :module_detail_pointers_detail => [{
+                          :name => "Linked Lists",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Stacks & Queues",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Trees",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Tries & Heaps",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Advanced Problem Solving Techniques",
+                        :module_detail_pointers_detail => [{
+                          :name => "Greedy Algorithms",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Backtracking",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Dynamic Programming",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Graphs",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Programming Language Internals",
+                        :module_detail_pointers_detail => [{
+                          :name => "Data Types and Syntax",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Programming Paradigms for the Language",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Collections framework/ standard library",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Concurrency",
+                          :module_detail_pointers_details => []
+                        }, {
+                          :name => "Advanced Concepts and Common Pitfalls",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Database Management Systems",
+                        :module_detail_pointers_detail => [{
+                          :name => "SQL",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Operating Systems",
+                        :module_detail_pointers_detail => [{
+                          :name => "Concurrency and Synchronization",
+                          :module_detail_pointers_details => []
+                        }]
+                      }, {
+                        :name => "Computer Networks",
+                        :module_detail_pointers_detail => [{
+                          :name => "Socket Programming",
+                          :module_detail_pointers_details => []
+                        }]
+                      }],:read_prev => "Read Prev: Module 1 - Introduction to Programming"
+                    }
+                  }],
+                                  },
                 :mentor => {:heading => "<h2><b><span class=\"highlight\">Our teaching army</span></b> will make you confident about your fundamentals</h2>", 
                     :description => "Our tutors are experts from top companies who have built scalable systems and understand the real-life importance 
                     of Data Science and Machine Learning.", :instructors => [{:image => "academy/png/anshuman.png", :name => "Anshuman Singh", 
