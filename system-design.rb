@@ -69,82 +69,534 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
             {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Live classes</b> by experienced professionals and alumni"},
             {:img => "course_page/svg/Career-Support.svg", :title => "<b>1:1 mentorship</b> from industry veterans on a <b>regular basis</b>"},
             {:img => "course_page/svg/Mentorship.svg", :title => "<b>Career support</b> through a dedicated team, strong alumni network"}]},
-        :curriculum => {:features => {:title => "<h2><b><span class=\"highlight\">Tried & Tested</span> Curriculum</b>, 
-            curated <b>by Industry Experts</b></h2>", :subtitle => "", :market => {:head => "Products in the markets are", 
-            :items => [{:img => "course_page/svg/unstrct.svg", :desc => {:title => "Unstructured", 
-            :subtitle => "Scattered articles, blogs & videos need extra effort to stitch it all together"}}, 
-            {:img => "course_page/svg/theory.svg", :desc => {:title => "Theoretical", :subtitle => "Limited practical work"}}, 
-            {:img => "course_page/svg/imperson.svg", :desc => {:title => "Impersonal", :subtitle => "Recorded videos & articles with no personalisation"}}, 
-            {:img => "course_page/svg/irindus.svg", :desc => {:title => "Not industry-relevant", 
-            :subtitle => "Old, un-refreshed content"}}]}, 
-            :scaler => {:head => "Scaler\'s curriculum is", 
-            :items => [{:img => "academy/svg/structured.svg", :desc => {:title => "Structured", :subtitle => "Thoughtfully designed curriculum helps 
-            you to emerge confident & comfortable"}}, {:img => "academy/svg/hands-on.svg", 
-            :desc => {:title => "Hands-on", :subtitle => "Projects and assignment to implement concepts"}}, 
-            {:img => "academy/svg/personalised.svg", :desc => {:title => "Personalised", :subtitle => "Topics, peers & pace of learning are 
-            optimized for your needs"}}, {:img => "academy/svg/industry-relevant.svg", :desc => {:title => "Industry-relevant", 
-            :subtitle => "Industry-tested curriculum to make you job ready"}}]}}, 
-            :content => {:title => "<h2><b> Scaler Academy's Curriculum</b> is designed to make you a <span class=\"highlight\"><b>solid engineer</b></h2>", 
-            :subtitle => "Based on a simple 30 minutes MCQ test, you enter <b>Beginner / Intermediate / Advanced sections</b>. 
-            Beginner and Intermediate sections cover some <b>additional basic topics</b> that Advanced students do not need.", 
-            :courses => [{:name => "Beginner", :icon => "academy/svg/beginner.svg", :active_icon => "academy/svg/beginner-active.svg", 
-            :desc => "I know bare minimum coding / starting from scratch", :duration => "44 weeks course", :enrollment_status => "Coming soon!"}, 
-            {:name => "Intermediate", :icon => "academy/svg/intermediate.svg", :active_icon => "academy/svg/intermediate-active.svg", 
-            :desc => "I know coding in one programming language. Can build basic applications.", 
-            :enrollment_status => "Enrolment open", :duration => "37 weeks course"}, 
-            {:name => "Advanced", :icon =>"academy/svg/advanced.svg", :active_icon => "academy/svg/advanced-active.svg", 
-            :desc => "I am good at coding. I know basic problem solving, data structures, algorithms. Can build basic to advanced applications.", 
-            :enrollment_status => "Enrolment open", :duration => "30 weeks course"}], :pointers => [{:title => "Introduction to Programming", 
-            :clock_icon => "academy/svg/clock1.svg", :duration => "7 Weeks", 
-            :syllabus => ["Decision trees & control", "Binary number system", "Strings", "Arithmetic operators", "Loops"], 
-            :mark => "academy/svg/mark1.svg", :arrow => "academy/svg/arrow1.svg"}, 
-            {:title => "Programming Constructs", :clock_icon => "academy/svg/clock2.svg", :duration => "7 Weeks", 
-            :syllabus => ["Functions", "Recursion", "Pointers", "Structures", "Structures, Unions & Dynamic Arrays", "Asymptotic notations"], 
-            :mark => "academy/svg/mark2.svg", :arrow => "academy/svg/arrow1.svg"}, 
-            {:title =>"Problem Solving & CS Fundamentals", :clock_icon => "academy/svg/clock3.svg", :duration => "15 Weeks", 
-            :syllabus => ["Time Complexity, Arrays, Strings, Binary Search, 2 Pointers, Recursion, Hashing, Sorting, Bit manipulation", 
-            "Stacks, Queues, Linked Lists, Trees, Tries, Heap", "Greedy, DP, Graphs", "DB, OS, and Computer Networks"], 
-            :mark => "academy/svg/mark3.svg"}], :special_courses => [{:name =>"Backend Specialisation", 
-            :clock_icon => "academy/svg/clock4.svg", :duration => "15 Weeks", 
-            :pointers => ["System Design (HLD + LLS) with project", "MVC, REST APIs, ORM, SprintBoot, Views, Database Indexes, Multithreading"]}, 
-            {:name =>"Fullstack Specialisation", :clock_icon => "academy/svg/clock5.svg", :duration => "15 Weeks", 
-            :pointers => ["System Design (HLD + LLS) with project", "Building a server, into to MVC, web architecture, HTML, CSS, Javascript, Node.js, Backend architecture, MongoDB, React/Redux"], 
-            :cta =>"Read More >"}], "advanced_electives"=>{:title =>"<b>Advanced Electives</b> (Optional)", 
-            "subtitle"=>"Starting from the March'21 batches, the electives stated below will taught after the entire course is 
-            completed. Learners can take up all electives or just a few of them and they are completely optional. 
-            We believe these electives can help engineers further accelerate their carrer and hence we advice you to opt for 
-            them!", "modal_title"=>"<b>Introducing Advanced Electives</b>", :modal_subtitle => "Introducing 3 elective courses 
-            to our curriculum, to help you go above and beyond in your journey to being the best programmer you can be", 
-            "new_badge_icon"=>"academy/svg/elective_new_badge.svg", "subjects"=>[{:title =>"Advanced DSA", 
-            :clock_icon => "academy/svg/clock6.svg", :icon => "academy/svg/advanced_dsa.svg", :duration => "4 weeks", 
-            :syllabus => ["Combinatorics and Probability", "Matrix exponentiation", "Advanced Trees: Segment Tree, k-D Tree", 
-            "Advanced Dynamic Programming 1", "Advanced Graphs 1: Bridges, Articulation point", "Advanced Graphs 2: Network Flow", 
-            "Miscellaneous company problem discussion"]}, {:title =>"Concurrent Programming", :clock_icon => "academy/svg/clock2.svg", 
-            :icon => "academy/svg/concurrent_programming.svg", :duration => "4 weeks", :syllabus => ["Introduction to Concurrency", 
-            "Concurrency in Java", "Concurrency in Java 2 + Exercise", "Parallelization 1", "Parallelization 2", "Dependency Injection", 
-            "Concurrent Programming 1", "Concurrent Programming 2", "Assignment Discussion"]}, {:title =>"Product Management", 
-            :clock_icon => "academy/svg/clock3.svg", :icon => "academy/svg/product_management.svg", :duration => "4 weeks", 
-            :syllabus => ["Introduction to Product Management", "Product Vision and Measurement", 
-            "Roadmaps and Prioritization", "The Spring Process and Product Leadership", 
-            "Product Development I", "Product Development II"]}]}, 
-            "notes"=>[{:icon => "course_page/svg/Price.svg", :title =>"Price", 
-            :desc =>"No difference in price between the two sections"}, {:icon => "course_page/svg/Eligibilty.svg", 
-            :title =>"Eligibility", :desc =>"Any working professional who has graduated on or before 2021"}], 
-            :pop_up => {:title =>"At Scaler, we provide a structured, comprehensive, industry vetted curriculum that is designed 
-            to take you to the next level in your career by helping you emerge as a skilled and strong engineer. 
-            This System Design course is a part of our Scaler Academy program, so we make sure you learn exactly everything that you need to, 
-            to solidify your career.", :content => [{:name =>"System Design (HLD + LLD)", :clock_icon => "academy/svg/clock5.svg", 
-            :duration => "15 Weeks", :pointers => ["LLD","OOP Constructs","Properties of a Good Software", "SOLID Principles", 
-            "Introduction to Design Patterns","Builder Pattern", "Factory Pattern", "Prototype Pattern", 
-            "Adapter Pattern", "Decorator Pattern", "Flyweight Pattern", 
-            "Observer Pattern", "Strategy Pattern", "UML Diagrams", 
-            "How to Approach Design Problems", "Design a Pen", "Design TicTacToe", 
-            "Design Snakes and Ladders", "Design Parking Lot", "Design BookMyShow", 
-            "Representation of Multiple relationship cardinalities in Schema Design","HLD",
-            "System Design Fundamentals","Caching","CAP Theorem","SQL vs NoSQL","Master-Slave architecture",
-            "Database sharding and replicas","Microservices and Containerisation","Zookeeper",
-            "Kafka","Quadtrees (nearest neighbors)","Design S3","Design Distributed crawler",
-            "Design Hotstar","Design Google Search Typeahead","Design Quora","Design Facebook Messanger"]}]}}},
+        :academy_curriculum => {:sections => [
+            {
+              :heading => 'Beginner',
+              :duration => '13 Months'
+            },
+            {
+              :heading => 'Intermediate',
+              :duration => '11 Months'
+            },
+            {
+              :heading => 'Advanced',
+              :duration => '09 Months'
+            }
+          ],
+          :modules => [
+            {
+              :label => 'Module - 1',
+              :name => 'Introduction to Programming',
+              :duration => '1 to 2 Months',
+              :content => {
+                :duration => '1 to 2 Months*',
+                :duration_description => 'There are two types of Beginner batches. "Introduction to Programming" module is 1 month long for Beginner Refresher and 2 months long for Beginner Complete',
+                :module_detail_pointers => [
+                  {
+                    :name => 'Introduction to Programming',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Python OR Java',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Data Types and Operators',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Loops and Conditional Statements',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Functions',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => '1D & 2D Arrays',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Strings',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  }
+                ],
+                :read_next => 'Read Next: Module 2 - Programming Constructs'
+              }
+            },
+            {
+              :label => 'Module - 2',
+              :name => 'Programming Constructs',
+              :duration => '2 Months',
+              :content => {
+                :duration => '2 Months',
+                :module_detail_pointers => [
+                  {
+                    :name => 'Programming Constructs',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Introduction to Time Complexity Analysis',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Arrays',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Number System, Bit Manipulation',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Maths for Programming',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Sorting and Hashing',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Recursion',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Introduction to Data Structures Fundamentals (Stacks, Linked Lists, Trees)',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  }
+                ],
+                :read_next => 'Read Next: Module 3 - Advanced DSA and CS Fundamentals'
+              }
+            },
+            {
+              :label => 'Module - 3',
+              :name => 'Advanced DSA and CS Fundamentals',
+              :duration => '4 Months',
+              :content => {
+                :duration => '4 Months',
+                :module_detail_pointers => [
+                  {
+                    :name => 'Problem Solving Techniques',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Time Complexity Analysis',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Arrays',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Bit Manipulation',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Maths',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Recursion & Sorting',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Binary Search & 2 Pointers',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Hashing',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Pattern Matching Algorithms',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'Data Structures',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Linked Lists',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Stacks & Queues',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Trees',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Tries & Heaps',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'Advanced Problem Solving Techniques',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Greedy Algorithms',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Backtracking',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Dynamic Programming',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Graphs',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'Programming Language Internals**',
+                    :description => '(To be conducted in inverted classroom model)',
+                    :module_detail_pointers_detail => [
+                    {
+                      :name => 'Data Types and Syntax',
+                      :module_detail_pointers_details => []
+                    },
+                    {
+                      :name => 'Programming Paradigms for the Language',
+                      :module_detail_pointers_details => []
+                    },
+                    {
+                      :name => 'Collections framework/ standard library',
+                      :module_detail_pointers_details => []
+                    },
+                    {
+                      :name => 'Concurrency',
+                      :module_detail_pointers_details => []
+                    },
+                    {
+                      :name => 'Advanced Concepts and Common Pitfalls',
+                      :module_detail_pointers_details => []
+                    }
+                  ]
+                  },
+                  {
+                    :name => 'Database Management Systems',
+                      :module_detail_pointers_detail => [
+                      {
+                        :name => 'SQL',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'Operating Systems',
+                      :module_detail_pointers_detail => [
+                      {
+                        :name => 'Concurrency and Synchronization',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'Computer Networks',
+                      :module_detail_pointers_detail => [
+                      {
+                        :name => 'Socket Programming',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  }
+                  ],
+                  :read_next => 'Read Next: Module 4 - Software and System Design'
+                  }
+                  },
+                  {
+                  :label => 'Module - 4',
+                  :name => 'Software and System Design',
+                  :duration => '3 Months',
+                  :content => {
+                  :duration => '3 Months',
+                  :module_detail_pointers => [
+                  {
+                    :name => 'Object Oriented Design (LLD)',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'OOP',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Design Principles - SOLID',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Design Patterns',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'UML Diagrams & Schema Design',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Best Programming Practices (API Design and Project Structure)',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Concurrency and Multithreading',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Case Studies and Machine Coding (How to build real systems)',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  },
+                  {
+                    :name => 'System Design (HLD)',
+                    :module_detail_pointers_detail => [
+                      {
+                        :name => 'Consistent Hashing',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Caching',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'CAP Theorem',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Distributed Systems & Databases',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'SQL and NoSQL',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Scalability',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Zookeeper + Kafka',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Location Based Services (S3, Quad Trees)',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Microservices & Containerisation (Docker)',
+                        :module_detail_pointers_details => []
+                      },
+                      {
+                        :name => 'Case Studies',
+                        :module_detail_pointers_details => []
+                      }
+                    ]
+                  }
+                  ],
+                  :read_next => 'Read Next: Module Projects'
+                  }
+                  },
+                  {
+                  :label => '',
+                  :name => 'Module Projects',
+                  :duration => '2 Months',
+                  :content => {
+                  :duration => '2 Months',
+                  :module_detail_pointers => [
+                  {
+                    :title => 'FullStack Specialisation (Backend and Fullstack)',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'MVC',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'REST APIs',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'ORM',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'SpringBoot (or Django)',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Views',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Building a server',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Web architecture',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'HTML, CSS, Javascript in depth, Node.js',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Backend architecture, MongoDB, React / Redux',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Github, Version Control',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Capstone project',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :choice => 'Or',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :title => 'Data Engineering Specialisation',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Building efficient Data Processing Systems',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Advanced SQL',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Cloud Services - AWS, or GCP',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Developing ETL pipelines',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Map-Reduce Framework',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Big Data',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Data Warehousing & Modelling',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'OLAP, Dashboarding',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Workflow Orchestration',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Logging, and Monitoring',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'MapReduce, HiveQL, Presto',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => '3 Projects',
+                    :module_detail_pointers_detail => []
+                  }
+                  ],
+                  :read_next => 'Read Next: Advanced Electives'
+                  }
+                  },
+                  {
+                  :label => '',
+                  :name => 'Advanced Electives',
+                  :duration => '1 Month',
+                  :content => {
+                  :duration => '1 Month',
+                  :module_detail_pointers => [
+                  {
+                    :title => 'DSA for Competitive Programming',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Combinatorics and Probability',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Matrix exponentiation',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Advanced Trees => Segment Tree, k-D Tree',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Disjoint Set Union',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Advanced Dynamic Programming',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Advanced Graphs => Bridges, Articulation point, Network Flow ',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :choice => 'And/Or',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :title => 'Product Management for Engineers',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Introduction to Product Management',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Product Thinking & Product Discovery',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Product Roadmap & Prioritization',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Mental Models for Product Managers',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Product Analytics',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Hands-on case study & Mixpanel session',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Delivery & Project Management',
+                    :module_detail_pointers_detail => []
+                  },
+                  {
+                    :name => 'Practical ways to apply PM lessons as an Engineer',
+                    :module_detail_pointers_detail => []
+                  }
+                  ],
+                  :read_prev => 'Read Prev: Module 1 - Introduction to Programming'
+                  }
+                  }
+                  ]
+                  },
         :career => {:heading => "<h2><span class=\"highlight\">Career Services</span></h2>", 
             :sub_heading => "Along with upskilling and preparing you to be a solid engineer, we will help 
             you with your job search and interview preparation as well!", 
