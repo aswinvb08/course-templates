@@ -689,7 +689,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                       }, {
                         :title => "4 Months",
                         :module_detail_pointers_detail => []
-                      } {
+                      }, {
                         :name => "Problem Solving Techniques",
                         :module_detail_pointers_detail => [{
                           :name => "Time Complexity Analysis",
