@@ -533,7 +533,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :name => "Electives",
                     :duration => "1 month",
                     :content => {
-                      :duration => "1 months",
+                      :duration => "1 month",
                       :module_detail_pointers => [{
                         :name => "Computer Vision",
                         :module_detail_pointers_detail => [
