@@ -534,8 +534,6 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :duration => "1 month",
                     :content => {
                       :duration => "1 months",
-                      :note1: 'At least 1 Elective must be taken to complete the program',
-                      :note2: 'There is no maximum limit as of now, so you can take as many Electives as you like',
                       :module_detail_pointers => [{
                         :name => "Computer Vision",
                         :module_detail_pointers_detail => [
