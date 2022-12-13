@@ -443,10 +443,6 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           ]
                         },
                         {
-                          :choice => 'Or',
-                          :module_detail_pointers_detail => []
-                        },
-                        {
                           :name => 'Data Engineering Specialisation',
                           :module_detail_pointers_detail => [
                             {
@@ -538,10 +534,6 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                               :module_detail_pointers_detail => []
                             }
                           ]
-                        },
-                        {
-                          :choice => 'And/Or',
-                          :module_detail_pointers_detail => []
                         },
                         {
                           :name => 'Product Management for Engineers',
