@@ -368,108 +368,110 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :duration => '2 Months',
                     :module_detail_pointers => [
                     {
-                      :title => 'FullStack Specialisation (Backend and Fullstack)',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'MVC',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'REST APIs',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'ORM',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'SpringBoot (or Django)',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Views',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Building a server',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Web architecture',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'HTML, CSS, Javascript in depth, Node.js',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Backend architecture, MongoDB, React / Redux',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Github, Version Control',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Capstone project',
-                      :module_detail_pointers_detail => []
+                      :name => 'FullStack Specialisation (Backend and Fullstack)',
+                      :module_detail_pointers_detail => [
+                        {
+                          :name => 'MVC',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'REST APIs',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'ORM',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'SpringBoot (or Django)',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Views',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Building a server',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Web architecture',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'HTML, CSS, Javascript in depth, Node.js',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Backend architecture, MongoDB, React / Redux',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Github, Version Control',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Capstone project',
+                          :module_detail_pointers_detail => []
+                        }
+                      ]
                     },
                     {
                       :choice => 'Or',
                       :module_detail_pointers_detail => []
                     },
                     {
-                      :title => 'Data Engineering Specialisation',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Building efficient Data Processing Systems',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Advanced SQL',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Cloud Services - AWS, or GCP',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Developing ETL pipelines',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Map-Reduce Framework',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Big Data',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Data Warehousing & Modelling',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'OLAP, Dashboarding',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Workflow Orchestration',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Logging, and Monitoring',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'MapReduce, HiveQL, Presto',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => '3 Projects',
-                      :module_detail_pointers_detail => []
+                      :name => 'Data Engineering Specialisation',
+                      :module_detail_pointers_detail => [
+                        {
+                          :name => 'Building efficient Data Processing Systems',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Advanced SQL',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Cloud Services - AWS, or GCP',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Developing ETL pipelines',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Map-Reduce Framework',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Big Data',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Data Warehousing & Modelling',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'OLAP, Dashboarding',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Workflow Orchestration',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Logging, and Monitoring',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'MapReduce, HiveQL, Presto',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => '3 Projects',
+                          :module_detail_pointers_detail => []
+                        }
+                      ]
                     }
                     ],
                     :read_next => 'Read Next: Advanced Electives'
@@ -483,72 +485,74 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :duration => '1 Month',
                     :module_detail_pointers => [
                     {
-                      :title => 'DSA for Competitive Programming',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Combinatorics and Probability',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Matrix exponentiation',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Advanced Trees => Segment Tree, k-D Tree',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Disjoint Set Union',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Advanced Dynamic Programming',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Advanced Graphs => Bridges, Articulation point, Network Flow ',
-                      :module_detail_pointers_detail => []
+                      :name => 'DSA for Competitive Programming',
+                      :module_detail_pointers_detail => [
+                        {
+                          :name => 'Combinatorics and Probability',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Matrix exponentiation',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Advanced Trees => Segment Tree, k-D Tree',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Disjoint Set Union',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Advanced Dynamic Programming',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Advanced Graphs => Bridges, Articulation point, Network Flow ',
+                          :module_detail_pointers_detail => []
+                        }
+                      ]
                     },
                     {
                       :choice => 'And/Or',
                       :module_detail_pointers_detail => []
                     },
                     {
-                      :title => 'Product Management for Engineers',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Introduction to Product Management',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Product Thinking & Product Discovery',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Product Roadmap & Prioritization',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Mental Models for Product Managers',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Product Analytics',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Hands-on case study & Mixpanel session',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Delivery & Project Management',
-                      :module_detail_pointers_detail => []
-                    },
-                    {
-                      :name => 'Practical ways to apply PM lessons as an Engineer',
-                      :module_detail_pointers_detail => []
+                      :name => 'Product Management for Engineers',
+                      :module_detail_pointers_detail => [
+                        {
+                          :name => 'Introduction to Product Management',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Product Thinking & Product Discovery',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Product Roadmap & Prioritization',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Mental Models for Product Managers',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Product Analytics',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Hands-on case study & Mixpanel session',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Delivery & Project Management',
+                          :module_detail_pointers_detail => []
+                        },
+                        {
+                          :name => 'Practical ways to apply PM lessons as an Engineer',
+                          :module_detail_pointers_detail => []
+                        }
+                      ]
                     }
                     ],
                     :read_prev => 'Read Prev: Module 1 - Introduction to Programming'

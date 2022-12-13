@@ -540,258 +540,257 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :name => "Electives",
                     :duration => "1 month",
                     :content => {
-                      :duration => "1 month",:module_detail_pointers => [{
-                        :title => "Computer Vision",
+                        :duration => "1 month",:module_detail_pointers => [{
+                        :name => "Computer Vision",
+                        :module_detail_pointers_detail => [
+                            {
+                                :name => "Convolutional Neural Nets",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Data Augmentation",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Transfer Learning",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "CNN",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "CNN hyperparameters tuning & BackPropagation",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "CNN Visualization",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Popular CNN Architecture - Alex, VGG, ResNet, Inception, EfficientNet, MobileNet",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Object Segmentation, Localisation, and Detection",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Generative Models, GANs",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Attention Models",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Siamese Networks",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Advanced CV",
+                                :module_detail_pointers_detail => []
+                                }
+                        ]
+                        }, {
+                        :name => "Natural Language Processing",
+                        :module_detail_pointers_detail => [
+                            {
+                                :name => "Text Processing and representation",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Tokenization, Stemming, Lemmatization",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Vector space modeling, Cosine Similarity, Euclidean Distance",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "POS tagging, Dependency parsing",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Topic Modeling, Language Modeling",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Embeddings",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Recurrent Neural Nets",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Information Extraction",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "LSTM",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Attention",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Named Entity Recognition",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Transformers",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "HuggingFace",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "BERT",
+                                :module_detail_pointers_detail => []
+                                }
+                        ]
+                        }, {
+                        :name => "ML Ops and Data Engineering",
+                        :module_detail_pointers_detail => [
+                            {
+                                :name => "Streamlit",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Flask",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Containerisation, Docker",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Experiment Tracking",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "MLFlow",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "CI/CD",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "GitHub Actions",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "ML System Design",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "AWS Sagemaker, AWS Data Wrangler, AWS Pipeline",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Apache Spark",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Spark MLlib",
+                                :module_detail_pointers_detail => []
+                                }
+                        ]
+                        }, {
+                        :name => "Product Analytics",
+                        :module_detail_pointers_detail => [
+                            {
+                                :name => "Framework to address product sense questions",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Diagnostics",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Metrics, KPI",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Product Design & Development",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Guesstimates",
+                                :module_detail_pointers_detail => []
+                                }, {
+                                :name => "Product Cases from Netflix, Stripe, Instagram",
+                                :module_detail_pointers_detail => []
+                                }
+                        ]
+                        }, {
+                        :title => "Advanced DSA and CS Fundamentals",
                         :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Convolutional Neural Nets",
+                        }, {
+                        :title => "4 Months",
                         :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Data Augmentation",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Transfer Learning",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "CNN",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "CNN hyperparameters tuning & BackPropagation",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "CNN Visualization",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Popular CNN Architecture - Alex, VGG, ResNet, Inception, EfficientNet, MobileNet",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Object Segmentation, Localisation, and Detection",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Generative Models, GANs",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Attention Models",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Siamese Networks",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Advanced CV",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :choice => "And/Or",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :title => "Natural Language Processing",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Text Processing and representation",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Tokenization, Stemming, Lemmatization",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Vector space modeling, Cosine Similarity, Euclidean Distance",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "POS tagging, Dependency parsing",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Topic Modeling, Language Modeling",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Embeddings",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Recurrent Neural Nets",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Information Extraction",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "LSTM",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Attention",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Named Entity Recognition",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Transformers",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "HuggingFace",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "BERT",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :choice => "And/Or",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :title => "ML Ops and Data Engineering",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Streamlit",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Flask",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Containerisation, Docker",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Experiment Tracking",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "MLFlow",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "CI/CD",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "GitHub Actions",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "ML System Design",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "AWS Sagemaker, AWS Data Wrangler, AWS Pipeline",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Apache Spark",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Spark MLlib",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :choice => "And/Or",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :title => "Product Analytics",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Framework to address product sense questions",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Diagnostics",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Metrics, KPI",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Product Design & Development",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Guesstimates",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :name => "Product Cases from Netflix, Stripe, Instagram",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :choice => "And/Or",
-                        :module_detail_pointers_detail => []
-                      }, {
-                        :title => "Advanced DSA and CS Fundamentals (4 Months)",
-                        :module_detail_pointers_detail => []
-                      }, {
+                        }, {
                         :name => "Problem Solving Techniques",
                         :module_detail_pointers_detail => [{
-                          :name => "Time Complexity Analysis",
-                          :module_detail_pointers_details => []
+                            :name => "Time Complexity Analysis",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Arrays",
-                          :module_detail_pointers_details => []
+                            :name => "Arrays",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Bit Manipulation",
-                          :module_detail_pointers_details => []
+                            :name => "Bit Manipulation",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Maths",
-                          :module_detail_pointers_details => []
+                            :name => "Maths",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Recursion & Sorting",
-                          :module_detail_pointers_details => []
+                            :name => "Recursion & Sorting",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Binary Search & 2 Pointers",
-                          :module_detail_pointers_details => []
+                            :name => "Binary Search & 2 Pointers",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Hashing",
-                          :module_detail_pointers_details => []
+                            :name => "Hashing",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Pattern Matching Algorithms",
-                          :module_detail_pointers_details => []
+                            :name => "Pattern Matching Algorithms",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Data Structures",
                         :module_detail_pointers_detail => [{
-                          :name => "Linked Lists",
-                          :module_detail_pointers_details => []
+                            :name => "Linked Lists",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Stacks & Queues",
-                          :module_detail_pointers_details => []
+                            :name => "Stacks & Queues",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Trees",
-                          :module_detail_pointers_details => []
+                            :name => "Trees",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Tries & Heaps",
-                          :module_detail_pointers_details => []
+                            :name => "Tries & Heaps",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Advanced Problem Solving Techniques",
                         :module_detail_pointers_detail => [{
-                          :name => "Greedy Algorithms",
-                          :module_detail_pointers_details => []
+                            :name => "Greedy Algorithms",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Backtracking",
-                          :module_detail_pointers_details => []
+                            :name => "Backtracking",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Dynamic Programming",
-                          :module_detail_pointers_details => []
+                            :name => "Dynamic Programming",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Graphs",
-                          :module_detail_pointers_details => []
+                            :name => "Graphs",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Programming Language Internals",
                         :module_detail_pointers_detail => [{
-                          :name => "Data Types and Syntax",
-                          :module_detail_pointers_details => []
+                            :name => "Data Types and Syntax",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Programming Paradigms for the Language",
-                          :module_detail_pointers_details => []
+                            :name => "Programming Paradigms for the Language",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Collections framework/ standard library",
-                          :module_detail_pointers_details => []
+                            :name => "Collections framework/ standard library",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Concurrency",
-                          :module_detail_pointers_details => []
+                            :name => "Concurrency",
+                            :module_detail_pointers_details => []
                         }, {
-                          :name => "Advanced Concepts and Common Pitfalls",
-                          :module_detail_pointers_details => []
+                            :name => "Advanced Concepts and Common Pitfalls",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Database Management Systems",
                         :module_detail_pointers_detail => [{
-                          :name => "SQL",
-                          :module_detail_pointers_details => []
+                            :name => "SQL",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Operating Systems",
                         :module_detail_pointers_detail => [{
-                          :name => "Concurrency and Synchronization",
-                          :module_detail_pointers_details => []
+                            :name => "Concurrency and Synchronization",
+                            :module_detail_pointers_details => []
                         }]
-                      }, {
+                        }, {
                         :name => "Computer Networks",
                         :module_detail_pointers_detail => [{
-                          :name => "Socket Programming",
-                          :module_detail_pointers_details => []
+                            :name => "Socket Programming",
+                            :module_detail_pointers_details => []
                         }]
-                      }],:read_prev => "Read Prev: Module 1 - Introduction to Programming"
+                        }],:read_prev => "Read Prev: Module 1 - Introduction to Programming"
                     }
-                  }],
+                    }],
                                   },
                 :mentor => {:heading => "<h2><b><span class=\"highlight\">Our teaching army</span></b> will make you confident about your fundamentals</h2>", 
                     :description => "Our tutors are experts from top companies who have built scalable systems and understand the real-life importance 
