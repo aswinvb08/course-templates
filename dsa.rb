@@ -785,23 +785,23 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         algorithms to help you practice as much as you want, stay consistent, and track your 
                         progress. Establishing a solid foundation is crucial so staying patient and continuing 
                         the pace of learning will eventually pay off"},
-                        {:heading => "<b>What does Scaler’s Data Structures and Algorithms course cover?</b>", 
+                        {:heading => "<b>What does Scaler's Data Structures and Algorithms course cover?</b>", 
                                 :desc => "Data Structures and Algorithms module, which is covered under the Scaler Academy Program will give
                                  you expert-level knowledge of DSA and prepare you for interviews that will help advance 
                                  your career. Students will receive advanced and valuable training in data structures, algorithms, 
                                  and large-scale systems design, as well as gain insight into how various DSAs work. Recursion, arrays, 
                                  linked lists, stacks, queues, strings, binary search, trees, heaps, arithmetic operators, loops, etc., will 
                                  also be covered by experienced instructors."},
-                        {:heading => "<b>Why should you take Scaler’s Data Structures and Algorithms course?</b>", 
+                        {:heading => "<b>Why should you take Scaler's Data Structures and Algorithms course?</b>", 
                                 :desc => "Enrolling in the Scaler Academy program, which covers Data Structures and Algorithms will prepare 
-                                you for interviews and help you advance your career. You’ll gain extensive practical experience by working on 
+                                you for interviews and help you advance your career. You'll gain extensive practical experience by working on 
                                 real-world projects. Students are provided with a well-structured curriculum curated by industry experts that 
                                 combines CS basics, web development skills, and fundamental DSA skills that will prepare them for technical 
                                 interviews. Besides improving fundamental DSA skills, our instructors and mentors are well-equipped 
                                 to assist candidates with behavioral interviews."},
                         {:heading => "<b>Is Data Structures and Algorithms course difficult to learn?</b>", 
                                 :desc => "No, learning Data Structures and Algorithms is not difficult as long as you have the 
-                                motivation to learn. Developing this skill or knowledge simply requires practice and time. Once you’ve learned the 
+                                motivation to learn. Developing this skill or knowledge simply requires practice and time. Once you've learned the 
                                 fundamentals of data science, learning algorithms is a great next step."},
                         {:heading => "<b>Who should take this Data Structures and Algorithms course?</b>", 
                                 :desc => "Any working professional interested in pursuing or upskilling their career in software engineering, 
