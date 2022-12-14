@@ -437,6 +437,10 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                       ]
                     },
                     {
+                      :choice => 'Or',
+                      :module_detail_pointers_detail => []
+                    },
+                    {
                       :name => 'Data Engineering Specialisation',
                       :module_detail_pointers_detail => [
                         {
@@ -499,6 +503,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :duration => '1 Month',
                     :content => {
                     :duration => '1 Month',
+                    :note1 => 'At least 1 Elective must be taken to complete the program',
+                    :note2 => 'There is no maximum limit as of now, so you can take as many Electives as you like',
                     :module_detail_pointers => [
                     {
                       :name => 'DSA for Competitive Programming',
