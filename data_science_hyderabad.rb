@@ -925,7 +925,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     course is Rs. 2.99L inclusive of GST. EMI options are available. Take the course for two weeks - if you decide to withdraw, you're fully 
                     refunded. If you opt for an EMI option, your monthly payment will be as low as Rs. 9,811."},
                     {:question => "Why should I learn Data Science in Hyderabad from Scaler?", 
-                    :answer => "Scaler offers a Data science course in Hyderabad that will prepare you for interviews and advance your career. Youâ€™ll gain extensive practical experience 
+                    :answer => "Scaler offers a Data science course in Hyderabad that will prepare you for interviews and advance your career. You'll gain extensive practical experience 
                     by working on real-world projects. Students are provided with a well-structured curriculum curated by industry experts that combines problem solving and CS 
                     fundamentals, programming skills like R, Python, Java, etc., system design (high level and low level), 
                     programming constructs, specialization options (backend or full stack), etc., that will prepare them for 
