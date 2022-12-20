@@ -14,7 +14,7 @@ def up
       :apply_path => "/apply",
       :join_cta_text => "Talk to our Academic Advisors",
       :callout_icon => "us/callout_icon.svg",
-      :flash_text => "Next cohort for working professionals begins on <b>20th December</b>",
+      :flash_text => "Next cohort for working professionals begins on <b>3rd January</b>",
     },
     :glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's Full 
         Stack Specialization program</h2>", "sub_heading"=>"Scaler Academy's full-stack development program 
