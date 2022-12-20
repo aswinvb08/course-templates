@@ -1,13 +1,13 @@
 def up
-  Course.find_by(:slug => "us-academy-full-stack-developer")&.destroy
+  Course.find_by(:slug => "us-academy-data-structures-and-algorithms")&.destroy
   content = {
     :metadata => {:jsonld => "true", :program => "academy", :header => nil, 
     :cta_types => {:course_banner_request_callback=> 'landing' , :course_fab_request_callback => 'rcb'},
     :links => [{:url => "/events", :text => "Events"}], :noindex => "true"},
     :banner_alt => {
-      :heading => "Become a Full Stack Developer",
-      :content => "Upskill in DSA & System Design with specialization in Full Stack Development
-      and Build real-world projects by mastering React, MERN, JavaScript, etc.",
+      :heading => "Master Data Structures and Algorithms",
+      :content => "Secure product interviews with understanding of crucial data structures and algorithms, and their implementation and 
+      Build intuition on the inner workings of various DSA, a foundational skill for any top software engineer",
       :image1 => "us/girl_smiling.png",
       :image2 => "us/girl_working.png",
       :image3 => "us/boy_looking.png",
@@ -24,11 +24,33 @@ def up
             {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Aspirational peer group</b> of 2,000+ Scaler students & alumni"}, {:img => "course_page/svg/Career-Support.svg", 
                 :title => "<b>Regular 1:1 mentorship</b> from industry veterans"}, {:img => "course_page/svg/Mentorship.svg", 
                     :title => "<b>Career support</b> via a dedicated recruitment team, alumni network, etc"}]},
-    :briefing => {:heading => "<h2>Why <b>Full <span class=\"highlight\">Stack Web Development?</span></b></h2>", 
-      :places => [{:className => "mc", :name => "<h3><b>What is Full Stack Web Development and why is it important to learn?</b></h3>", :desc => "Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry."}, {:className => "mc", :name => "<h3><b>What is the job of a Full Stack Developer?</b></h3>", :desc => "Full-stack developers develop both the front-end and the server-side of the application, deploy, debug and maintain their databases and servers. Being a Full Stack Web Developer, you will be at an edge as you make better technical decisions and see the big picture."}, 
-          {:className => "mc", :name => "<h3><b>What skills are required to become a Full Stack Developer?</b></h3>", :desc => "As a Full Stack Developer, you become the jack of all techs, which means you must learn and be proficient in:<br>  
-              <li> HTML, CSS, UI & UX, JavaScript, etc. </li>  <li> Server-side languages such as Java, Python, Node.js, Or Golang, etc.</li>  <li> Frameworks Express, Spring Boot, Django, etc.</li>  <li> Along with an understanding of System Design, Data Structures and Algorithms, Databases, 
-              and version control systems like Git.</li>"}]},
+                    :briefing => {:heading => "<h2><span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b></h2>",
+                        :places => [{:name => "<h3><b>What are Data Structures?</b></h3>",
+                        :desc => "Data Structures are typically used to organize, process, retrieve and store data on computers 
+                        for efficient use. Having the right understanding and using the right data structures 
+                        helps software engineers write the right code."},
+                        {:name => "<h3><b>What are the types of Data Structures?</b></h3>",
+                        :desc => "There are two types of Data structures -
+                        <li><b>Linear Data structure:</b> If the elements of a data structure result in a sequence or a 
+                        linear list then it is called a Linear data structure. Every data element is connected 
+                        to its next and sometimes previous element in a sequential manner. 
+                        Example - Arrays, Linked Lists, Stacks, Queues, etc.</li>
+                        <li><b>Non-linear Data structure:
+                        </b> If the elements of a Data structure result in a way that the traversal of nodes is 
+                        not done in a sequential manner, then it is a Non-linear data structure. 
+                        Its elements are not sequentially connected, and every element can attach 
+                        to another element in multiple ways. Example - Hierarchical data structure like trees.</li>"},
+                        {:name => "<h3><b>Why are Data Structures important?</b></h3>",
+                        :desc => "Data structures are a key component of Computer Science and help in understanding the 
+                        nature of a given problem at a deeper level. They're widely utilized in Artificial Intelligence, 
+                        operating systems, graphics, and other fields. If the programmer is unfamiliar with data 
+                        structure and Algorithm, they may be unable to write efficient data-handling code.
+                        <li>A strong grasp of this is of paramount significance if you want to learn how to organize 
+                        and assemble data and solve real-life problems</li>
+                        <li>Almost all product-based companies look at how strong you are at data structures, 
+                        so it will also help you in your day-to-day work</li> 
+                        <li>Knowing when to apply the proper data structures is an important step to write
+                         efficient code by managing data properly</li>"}]},
     :two_course_curriculum => {
                         :features => {
                           :title => "Tried & tested curriculum, delivered to <b>thousands of learners</b>",:brochure_link => "https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/754/original/US_Academy_Brochure.pdf?1643800379",:market => {
@@ -206,7 +228,7 @@ def up
   }
 
   CoursePageTemplateService.new(
-    title: "US Academy Full Stack Developer",
+    title: "US Academy Data Structures And Algorithms",
     content: content
   ).execute
 end
