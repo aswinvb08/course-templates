@@ -12,10 +12,35 @@ def up
       :image2 => "us/girl_working.png",
       :image3 => "us/boy_looking.png",
       :apply_path => "/apply",
-      :join_cta_text => "Talk to our Academic Advisors",
-      :callout_icon => "us/callout_icon.svg",
-      :flash_text => "Next cohort for working professionals begins on <b>3rd January</b>",
+      :join_cta_text => "Talk to our Academic Advisors"
     },
+    :briefing => {:heading => "<h2><span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b></h2>",
+      :places => [{:name => "<h3><b>What are Data Structures?</b></h3>",
+      :desc => "Data Structures are typically used to organize, process, retrieve and store data on computers 
+      for efficient use. Having the right understanding and using the right data structures 
+      helps software engineers write the right code."},
+      {:name => "<h3><b>What are the types of Data Structures?</b></h3>",
+      :desc => "There are two types of Data structures -
+      <li><b>Linear Data structure:</b> If the elements of a data structure result in a sequence or a 
+      linear list then it is called a Linear data structure. Every data element is connected 
+      to its next and sometimes previous element in a sequential manner. 
+      Example - Arrays, Linked Lists, Stacks, Queues, etc.</li>
+      <li><b>Non-linear Data structure:
+      </b> If the elements of a Data structure result in a way that the traversal of nodes is 
+      not done in a sequential manner, then it is a Non-linear data structure. 
+      Its elements are not sequentially connected, and every element can attach 
+      to another element in multiple ways. Example - Hierarchical data structure like trees.</li>"},
+      {:name => "<h3><b>Why are Data Structures important?</b></h3>",
+      :desc => "Data structures are a key component of Computer Science and help in understanding the 
+      nature of a given problem at a deeper level. They're widely utilized in Artificial Intelligence, 
+      operating systems, graphics, and other fields. If the programmer is unfamiliar with data 
+      structure and Algorithm, they may be unable to write efficient data-handling code.
+      <li>A strong grasp of this is of paramount significance if you want to learn how to organize 
+      and assemble data and solve real-life problems</li>
+      <li>Almost all product-based companies look at how strong you are at data structures, 
+      so it will also help you in your day-to-day work</li> 
+      <li>Knowing when to apply the proper data structures is an important step to write
+       efficient code by managing data properly</li>"}]},
     :glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's Full 
         Stack Specialization program</h2>", "sub_heading"=>"Scaler Academy's full-stack development program 
         helps you learn exactly everything that you need to, to solidify your tech career", 
@@ -24,33 +49,6 @@ def up
             {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Aspirational peer group</b> of 2,000+ Scaler students & alumni"}, {:img => "course_page/svg/Career-Support.svg", 
                 :title => "<b>Regular 1:1 mentorship</b> from industry veterans"}, {:img => "course_page/svg/Mentorship.svg", 
                     :title => "<b>Career support</b> via a dedicated recruitment team, alumni network, etc"}]},
-                    :briefing => {:heading => "<h2><span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b></h2>",
-                        :places => [{:name => "<h3><b>What are Data Structures?</b></h3>",
-                        :desc => "Data Structures are typically used to organize, process, retrieve and store data on computers 
-                        for efficient use. Having the right understanding and using the right data structures 
-                        helps software engineers write the right code."},
-                        {:name => "<h3><b>What are the types of Data Structures?</b></h3>",
-                        :desc => "There are two types of Data structures -
-                        <li><b>Linear Data structure:</b> If the elements of a data structure result in a sequence or a 
-                        linear list then it is called a Linear data structure. Every data element is connected 
-                        to its next and sometimes previous element in a sequential manner. 
-                        Example - Arrays, Linked Lists, Stacks, Queues, etc.</li>
-                        <li><b>Non-linear Data structure:
-                        </b> If the elements of a Data structure result in a way that the traversal of nodes is 
-                        not done in a sequential manner, then it is a Non-linear data structure. 
-                        Its elements are not sequentially connected, and every element can attach 
-                        to another element in multiple ways. Example - Hierarchical data structure like trees.</li>"},
-                        {:name => "<h3><b>Why are Data Structures important?</b></h3>",
-                        :desc => "Data structures are a key component of Computer Science and help in understanding the 
-                        nature of a given problem at a deeper level. They're widely utilized in Artificial Intelligence, 
-                        operating systems, graphics, and other fields. If the programmer is unfamiliar with data 
-                        structure and Algorithm, they may be unable to write efficient data-handling code.
-                        <li>A strong grasp of this is of paramount significance if you want to learn how to organize 
-                        and assemble data and solve real-life problems</li>
-                        <li>Almost all product-based companies look at how strong you are at data structures, 
-                        so it will also help you in your day-to-day work</li> 
-                        <li>Knowing when to apply the proper data structures is an important step to write
-                         efficient code by managing data properly</li>"}]},
     :two_course_curriculum => {
                         :features => {
                           :title => "Tried & tested curriculum, delivered to <b>thousands of learners</b>",:brochure_link => "https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/754/original/US_Academy_Brochure.pdf?1643800379",:market => {
@@ -215,6 +213,53 @@ def up
             text: "Talk to our Academic Advisors",
             link: ''
       }]
+    },
+    :faq_us => {
+      :heading => 'FAQs',
+      :list => [
+        {
+          :heading => 'Is this program for me?',
+          :desc => 'The Scaler Academy Program is for tech professionals with more than 6 months of experience in software development. In addition to that, you must know one high-level programming language.'
+        },
+        {
+          :heading => 'Why is this course 7 or 9 months long?',
+          :desc => "Designed by MAANG experts, the Scaler Academy course is not a crash course, but a comprehensive one. Our industry-vetted curriculum lets you take charge of your career for life (not just your upcoming interview). And for that, your preparation needs to be thorough. Thus, the course duration is set to align with your hustling schedule that doesn't compromise on any in-demand topic, real-world project, or essential preparation strategy."
+        },
+        {
+          :heading => 'Can I pause and resume my course?',
+          :desc => 'We understand that you have a tight schedule and sometimes life gets in the way. At Scaler, you have the liberty to pause your course when needed and resume it at a later stage.'
+        },
+        {
+          :heading => 'How long will access to this course be available?',
+          :desc => 'You can avail yourself access to this course for 6 months, post-completion.'
+        },
+        {
+          :heading => 'I see that there is a project in the course. How will that reflect on my resume?',
+          :desc => 'The project will enable you to:<br>
+          - Work on real-life projects that prepares you for real-life situations<br>
+          - Get hands-on experience in various aspects of Software Development<br>
+          - Deploy projects on your own<br>
+          - Add this project on Github<br>
+          - Gain the edge you need for interviews'
+        },
+        {
+          :heading => 'What do you mean by career support?',
+          :desc => 'Our career support will:
+          <ul>
+            <li>Provide you with 1:1 mentorship & guidance</li>
+            <li>Make you job-ready</li>
+            <li>Guide you in refining your resume (LinkedIn & others)</li>
+            <li>Address your queries & provide you with industry insights</li>
+            <li>Schedule regular 1:1 mocks to help you overcome interview jitters</li>
+            <li>Facilitate referrals via our internal career support team & community</li>
+          </ul>
+          Getting a job is dependent on many factors, some of which are completely out of our control. Hence, we do not guarantee you a job.'
+        },
+        {
+          :heading => 'What is the ideal outcome of joining Scaler?',
+          :desc => "Excel in interviews, make it to the top-tech companies, receive the promotion you've always wanted or start your own company! Scaler alumni have achieved all these."
+        }
+      ]
     },
     :academy_welcome_modal => {
       :title => "Welcome to the Scaler family",:sub_title => "You will receive an email from us with a link to reset your password. We recommend that you do so before your next login. You can also use the OTP option.",:image => {

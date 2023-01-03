@@ -13,9 +13,11 @@ def up
       :image3 => "us/boy_looking.png",
       :apply_path => "/apply",
       :join_cta_text => "Talk to our Academic Advisors",
-      :callout_icon => "us/callout_icon.svg",
-      :flash_text => "Next cohort for working professionals begins on <b>3rd January</b>",
-    },
+    },:briefing => {:heading => "<h2>Why <b>Full <span class=\"highlight\">Stack Web Development?</span></b></h2>", 
+        :places => [{:className => "mc", :name => "<h3><b>What is Full Stack Web Development and why is it important to learn?</b></h3>", :desc => "Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry."}, {:className => "mc", :name => "<h3><b>What is the job of a Full Stack Developer?</b></h3>", :desc => "Full-stack developers develop both the front-end and the server-side of the application, deploy, debug and maintain their databases and servers. Being a Full Stack Web Developer, you will be at an edge as you make better technical decisions and see the big picture."}, 
+            {:className => "mc", :name => "<h3><b>What skills are required to become a Full Stack Developer?</b></h3>", :desc => "As a Full Stack Developer, you become the jack of all techs, which means you must learn and be proficient in:<br>  
+                <li> HTML, CSS, UI & UX, JavaScript, etc. </li>  <li> Server-side languages such as Java, Python, Node.js, Or Golang, etc.</li>  <li> Frameworks Express, Spring Boot, Django, etc.</li>  <li> Along with an understanding of System Design, Data Structures and Algorithms, Databases, 
+                and version control systems like Git.</li>"}]},
     :glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's Full 
         Stack Specialization program</h2>", "sub_heading"=>"Scaler Academy's full-stack development program 
         helps you learn exactly everything that you need to, to solidify your tech career", 
@@ -24,12 +26,7 @@ def up
             {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Aspirational peer group</b> of 2,000+ Scaler students & alumni"}, {:img => "course_page/svg/Career-Support.svg", 
                 :title => "<b>Regular 1:1 mentorship</b> from industry veterans"}, {:img => "course_page/svg/Mentorship.svg", 
                     :title => "<b>Career support</b> via a dedicated recruitment team, alumni network, etc"}]},
-    :briefing => {:heading => "<h2>Why <b>Full <span class=\"highlight\">Stack Web Development?</span></b></h2>", 
-      :places => [{:className => "mc", :name => "<h3><b>What is Full Stack Web Development and why is it important to learn?</b></h3>", :desc => "Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry."}, {:className => "mc", :name => "<h3><b>What is the job of a Full Stack Developer?</b></h3>", :desc => "Full-stack developers develop both the front-end and the server-side of the application, deploy, debug and maintain their databases and servers. Being a Full Stack Web Developer, you will be at an edge as you make better technical decisions and see the big picture."}, 
-          {:className => "mc", :name => "<h3><b>What skills are required to become a Full Stack Developer?</b></h3>", :desc => "As a Full Stack Developer, you become the jack of all techs, which means you must learn and be proficient in:<br>  
-              <li> HTML, CSS, UI & UX, JavaScript, etc. </li>  <li> Server-side languages such as Java, Python, Node.js, Or Golang, etc.</li>  <li> Frameworks Express, Spring Boot, Django, etc.</li>  <li> Along with an understanding of System Design, Data Structures and Algorithms, Databases, 
-              and version control systems like Git.</li>"}]},
-    :two_course_curriculum => {
+                    :two_course_curriculum => {
                         :features => {
                           :title => "Tried & tested curriculum, delivered to <b>thousands of learners</b>",:brochure_link => "https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/001/754/original/US_Academy_Brochure.pdf?1643800379",:market => {
                             :head => "Other programs in the market",:items => [{
@@ -194,7 +191,53 @@ def up
             link: ''
       }]
     },
-    :academy_welcome_modal => {
+    :faq_us => {
+      :heading => 'FAQs',
+      :list => [
+        {
+          :heading => 'Is this program for me?',
+          :desc => 'The Scaler Academy Program is for tech professionals with more than 6 months of experience in software development. In addition to that, you must know one high-level programming language.'
+        },
+        {
+          :heading => 'Why is this course 7 or 9 months long?',
+          :desc => "Designed by MAANG experts, the Scaler Academy course is not a crash course, but a comprehensive one. Our industry-vetted curriculum lets you take charge of your career for life (not just your upcoming interview). And for that, your preparation needs to be thorough. Thus, the course duration is set to align with your hustling schedule that doesn't compromise on any in-demand topic, real-world project, or essential preparation strategy."
+        },
+        {
+          :heading => 'Can I pause and resume my course?',
+          :desc => 'We understand that you have a tight schedule and sometimes life gets in the way. At Scaler, you have the liberty to pause your course when needed and resume it at a later stage.'
+        },
+        {
+          :heading => 'How long will access to this course be available?',
+          :desc => 'You can avail yourself access to this course for 6 months, post-completion.'
+        },
+        {
+          :heading => 'I see that there is a project in the course. How will that reflect on my resume?',
+          :desc => 'The project will enable you to:<br>
+          - Work on real-life projects that prepares you for real-life situations<br>
+          - Get hands-on experience in various aspects of Software Development<br>
+          - Deploy projects on your own<br>
+          - Add this project on Github<br>
+          - Gain the edge you need for interviews'
+        },
+        {
+          :heading => 'What do you mean by career support?',
+          :desc => 'Our career support will:
+          <ul>
+            <li>Provide you with 1:1 mentorship & guidance</li>
+            <li>Make you job-ready</li>
+            <li>Guide you in refining your resume (LinkedIn & others)</li>
+            <li>Address your queries & provide you with industry insights</li>
+            <li>Schedule regular 1:1 mocks to help you overcome interview jitters</li>
+            <li>Facilitate referrals via our internal career support team & community</li>
+          </ul>
+          Getting a job is dependent on many factors, some of which are completely out of our control. Hence, we do not guarantee you a job.'
+        },
+        {
+          :heading => 'What is the ideal outcome of joining Scaler?',
+          :desc => "Excel in interviews, make it to the top-tech companies, receive the promotion you've always wanted or start your own company! Scaler alumni have achieved all these."
+        }
+      ]
+    },:academy_welcome_modal => {
       :title => "Welcome to the Scaler family",:sub_title => "You will receive an email from us with a link to reset your password. We recommend that you do so before your next login. You can also use the OTP option.",:image => {
         :url => "scaler_branding/svg/welcome-email.svg",:title => "Scaler Academy Welcome"
       },:details => {
