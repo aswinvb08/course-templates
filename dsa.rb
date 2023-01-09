@@ -186,7 +186,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         :content=>{
                           :duration=>"3 Months", 
                           :duration_description=>"*Only 1 Specialization is allowed per learner, 
-                            Recorded lectures for others can be availed through  ‘Request from Support’. 
+                            Recorded lectures for others can be availed through  'Request from Support'. 
                             At Least 1 specialization is mandatory for successful completion of the course.", 
                           :module_detail_pointers=>[
                             {
