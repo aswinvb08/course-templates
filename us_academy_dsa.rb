@@ -7,12 +7,12 @@ def up
     :banner_alt => {
       :heading => "Master Data Structures and Algorithms",
       :content => "Secure product interviews with understanding of crucial data structures and algorithms, and their implementation and 
-      Build intuition on the inner workings of various DSA, a foundational skill for any top software engineer",
+      Build intuition on the inner workings of various DSA",
       :image1 => "us/girl_smiling.png",
       :image2 => "us/girl_working.png",
       :image3 => "us/boy_looking.png",
       :apply_path => "/apply",
-      :join_cta_text => "Talk to our Academic Advisors"
+      :join_cta_text => "I'm interested!"
     },
     :briefing => {:heading => "<h2><span style='font-size: 2.2rem;'>Why</span> <b><span class='highlight' style='height: 5rem; font-size: 2.2rem;'>Data Structures and Algorithms?</span></b></h2>",
       :places => [{:name => "<h3><b>What are Data Structures?</b></h3>",
