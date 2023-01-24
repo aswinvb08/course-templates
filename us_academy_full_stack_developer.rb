@@ -12,7 +12,7 @@ def up
       :image2 => "us/girl_working.png",
       :image3 => "us/boy_looking.png",
       :apply_path => "/apply",
-      :join_cta_text => "Talk to our Academic Advisors",
+      :join_cta_text => "I'm interested!",
     },:briefing => {:heading => "<h2>Why <b>Full <span class=\"highlight\">Stack Web Development?</span></b></h2>", 
         :places => [{:className => "mc", :name => "<h3><b>What is Full Stack Web Development and why is it important to learn?</b></h3>", :desc => "Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry."}, {:className => "mc", :name => "<h3><b>What is the job of a Full Stack Developer?</b></h3>", :desc => "Full-stack developers develop both the front-end and the server-side of the application, deploy, debug and maintain their databases and servers. Being a Full Stack Web Developer, you will be at an edge as you make better technical decisions and see the big picture."}, 
             {:className => "mc", :name => "<h3><b>What skills are required to become a Full Stack Developer?</b></h3>", :desc => "As a Full Stack Developer, you become the jack of all techs, which means you must learn and be proficient in:<br>  
