@@ -55,6 +55,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               profile building, and referral networks"}]})
       content.merge!(:academy_curriculum_2 => 
         {
+          :heading => "<b>Curriculum</b> is designed to make you a <span class='highlight'><b>solid engineer</b></span>",
           :sections=>[
             {
               :heading=>"Beginner", 
