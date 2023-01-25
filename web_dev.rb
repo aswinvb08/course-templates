@@ -48,7 +48,9 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 {:img => "course_page/svg/Mentorship.svg", :title => "<b>Career support</b> through mock interviews, 
                 profile building, and referral networks"}]})
         content.merge!(:academy_curriculum => 
-          {:sections => [
+          {
+            :heading => "<b>Curriculum</b> is designed to make you a <span class='highlight'><b>solid engineer</b></span>",
+            :sections => [
               {
                 :heading => 'Beginner',
                 :duration => '13 Months'

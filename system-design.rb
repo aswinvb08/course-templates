@@ -69,7 +69,9 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
             {:img => "course_page/svg/Aspirational-Network.svg", :title => "<b>Live classes</b> by experienced professionals and alumni"},
             {:img => "course_page/svg/Career-Support.svg", :title => "<b>1:1 mentorship</b> from industry veterans on a <b>regular basis</b>"},
             {:img => "course_page/svg/Mentorship.svg", :title => "<b>Career support</b> through a dedicated team, strong alumni network"}]},
-        :academy_curriculum => {:sections => [
+        :academy_curriculum => {
+          :heading => "<b>Curriculum</b> is designed to make you a <span class='highlight'><b>solid engineer</b></span>",
+          :sections => [
             {
               :heading => 'Beginner',
               :duration => '13 Months'
