@@ -741,7 +741,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :subtitle => "Total fee: Rs 2.99L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
-                    low as Rs 9,811 per month - that's like your monthly grocery bill!", 
+                    low as Rs 10,123 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},
                 :questions => {:heading => "<h2><b><span class = 'highlight'>Data Science Training</span> Course FAQs</b></h2>", 
                     :list => [{:question => "What is eligibility for a Data Science course in Hyderabad?", :answer => "As a subject, Data Science is 
@@ -776,7 +776,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     understanding of the Data Science domain enabling you to comprehend both trivial and substantial concepts with ease."}, 
                     {:question => "What are the fees for the Data Science course in Hyderabad?", :answer => "n Hyderabad, the fee for the Data Science 
                     course is Rs. 2.99L inclusive of GST. EMI options are available. Take the course for two weeks - if you decide to withdraw, you're fully 
-                    refunded. If you opt for an EMI option, your monthly payment will be as low as Rs. 9,811."},
+                    refunded. If you opt for an EMI option, your monthly payment will be as low as Rs. 10,123."},
                     {:question => "Why should I learn Data Science in Hyderabad from Scaler?", 
                     :answer => "Scaler offers a Data science course in Hyderabad that will prepare you for interviews and advance your career. You'll gain extensive practical experience 
                     by working on real-world projects. Students are provided with a well-structured curriculum curated by industry experts that combines problem solving and CS 

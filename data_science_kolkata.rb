@@ -745,7 +745,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :subtitle => "Total fee: Rs 2.99L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
-                    low as Rs 9,811 per month - that's like your monthly grocery bill!", 
+                    low as Rs 10,123 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},
                 :questions => {:heading => "<h2><b><span class = 'highlight'>Data Science Training</span> Course FAQs</b></h2>", 
                     :list => [{:question => "What is eligibility for a Data Science course in Kolkata?", 
@@ -782,7 +782,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     {:question => "What are the fees for the Data Science course in Kolkata?", 
                     :answer => "In Kolkata, the fee for the Data Science course is Rs. 2.99L inclusive of GST. EMI options are available. 
                     Take the course for two weeks - if you decide to withdraw, you're fully refunded. If you opt for an EMI option, 
-                    your monthly payment will be as low as Rs. 9,811."},
+                    your monthly payment will be as low as Rs. 10,123."},
                     {:question => "What are the learning objectives of this Data Science course of Kolkata?", 
                     :answer => "After completing this data science course of Kolkata, students will be able to:
                     <li>Acquire relevant programming skills.</li>

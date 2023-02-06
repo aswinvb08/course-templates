@@ -742,7 +742,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :subtitle => "Total fee: Rs 2.99L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
-                    low as Rs 9,811 per month - that's like your monthly grocery bill!", 
+                    low as Rs 10,123 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},
                 :questions => {:heading => "<h2><b><span class = 'highlight'>Machine Learning Training</span> Course FAQs</b></h2>", 
                     :list => [
