@@ -766,7 +766,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
         :join => {:heading => "Connect with an Academic Counsellor", :button => [{:id => "request_callback__one", 
         :text => "REQUEST A CALLBACK", :link => ""}]},
         :tuition_fee => {:heading => "<b>Tuition Fee of <span class='highlight'>Scaler Academy Program<span><b>", :title_img => "academy/svg/money-logo.svg", 
-            :subtitle => "Total fee: Rs 2.99L inclusive of GST. You can get super 
+            :subtitle => "Total fee: Rs 3.09L inclusive of GST. You can get super 
             affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
             if you choose to withdraw.", :title_content => "With EMI options, your payment can be as low as 10,123 per month- that's like your monthly grocery bill!", 
             :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},

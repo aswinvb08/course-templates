@@ -731,7 +731,7 @@ Course.find_by(:slug => "data-science-analytics-course")&.destroy
                     most important part, the mock interviews with my mentor, made me more confident day by day.", :cta => "Read more on", 
                     :link => "https://www.linkedin.com/in/mohbansa/", :linkedin => "https://www.linkedin.com/in/mohbansa/"}], :content2 => []},
                 :tuition_fee_data_science => {:heading => "<b>Tuition Fee</b>", :title_img => "academy/svg/money-logo.svg", 
-                    :subtitle => "Total fee: Rs 2.99L inclusive of GST at super 
+                    :subtitle => "Total fee: Rs 3.09L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
                     low as Rs 10,123 per month - that's like your monthly grocery bill!", 

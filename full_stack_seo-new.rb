@@ -637,7 +637,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
        
       content.merge!(:join => {:heading => "Connect with an Academic Counsellor",
                          :button => [{:id => "request_callback__one", :text => "REQUEST A CALLBACK", :link => ""}]}) 
-      content.merge!(:tuition_fee => {:heading => "<b>Tuition Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs. 2.99L inclusive of GST. You also get scholarships upto Rs. 25,000 and super affordable EMI options.
+      content.merge!(:tuition_fee => {:heading => "<b>Tuition Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs. 3.09L inclusive of GST. You also get scholarships upto Rs. 25,000 and super affordable EMI options.
                           Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With scholarship & EMI options, your payment can be as low as Rs. 10,123 per month - that's like your monthly 
                           grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}, {:id => "tuition_modal_two", :text => "SCHOLARSHIP DETAILS", :link => ""}]})
       content.merge!(:faq => {:main => [{:heading => "Program", :list => [{:heading => "<b>What is Scaler Academy?</b>", :desc => "Scaler Academy offers a structured, flexible and guided learning program for software engineers 
@@ -666,7 +666,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           {:heading => "<b>When would employers come to Scaler Academy to hire engineers?</b>", :desc => "Employers typically hire engineers all through the year, depending on their requirements. When employers do approach us, 
                           we would make the opportunity visible to students in the batch. Students are welcome to apply for opportunities that interest them. Each opportunity would have a test associated with it and students would be referred based on their performance in these 
                           tests and other factors like attendance and their problem-solving percentage."}]}, 
-                          {:heading => "Tuition Fee", :list => [{:heading => "<b>What is the total tuition fee?</b>", :desc => "The total tuition fee including GST is INR 2.99L. With EMI, this can drop as low as ~INR 10,123/month (equivalent to your monthly grocery bill!)"}, 
+                          {:heading => "Tuition Fee", :list => [{:heading => "<b>What is the total tuition fee?</b>", :desc => "The total tuition fee including GST is INR 3.09L. With EMI, this can drop as low as ~INR 10,123/month (equivalent to your monthly grocery bill!)"}, 
                           {:heading => "<b>Are there scholarships?</b>", :desc => "Yes!<br><b>Way of getting exciting scholarships at Scaler Academy</b><br><b>Get up to INR 25,000 as scholarship basis your performance in the 30 minutes entrance test!</b>"}, 
                           {:heading => "<b>Can I pay in EMIs?</b>", :desc => "<b>Yes! Via our NBFC partners, we provide a range of EMI options, from zero-interest EMI options 
                           (upto 12 months) and longer tenure loans of 24 months and 36 months. The longer tenure loans of 
