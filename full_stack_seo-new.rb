@@ -669,8 +669,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           {:heading => "Tuition Fee", :list => [{:heading => "<b>What is the total tuition fee?</b>", :desc => "The total tuition fee including GST is INR 3.09L. With EMI, this can drop as low as ~INR 10,123/month (equivalent to your monthly grocery bill!)"}, 
                           {:heading => "<b>Are there scholarships?</b>", :desc => "Yes!<br><b>Way of getting exciting scholarships at Scaler Academy</b><br><b>Get up to INR 25,000 as scholarship basis your performance in the 30 minutes entrance test!</b>"}, 
                           {:heading => "<b>Can I pay in EMIs?</b>", :desc => "<b>Yes! Via our NBFC partners, we provide a range of EMI options, from zero-interest EMI options 
-                          (upto 12 months) and longer tenure loans of 24 months and 36 months. The longer tenure loans of 
-                          24 months and 36 months will include the interest cost.</b>"}]}]})
+                          (upto 24 months) and longer tenure loans of 36 months. The longer tenure loans of 
+                          36 months will include the interest cost.</b>"}]}]})
 
     CoursePageTemplateService.new(
       title: "Full Stack Developer",
