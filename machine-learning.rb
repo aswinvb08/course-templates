@@ -739,10 +739,10 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     most important part, the mock interviews with my mentor, made me more confident day by day.", :cta => "Read more on", 
                     :link => "https://www.linkedin.com/in/mohbansa/", :linkedin => "https://www.linkedin.com/in/mohbansa/"}], :content2 => []},
                 :tuition_fee_data_science => {:heading => "<b>Tuition Fee</b>", :title_img => "academy/svg/money-logo.svg", 
-                    :subtitle => "Total fee: Rs 2.99L inclusive of GST at super 
+                    :subtitle => "Total fee: Rs 3.09L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
-                    low as Rs 9,811 per month - that's like your monthly grocery bill!", 
+                    low as Rs 10,123 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},
                 :questions => {:heading => "<h2><b><span class = 'highlight'>Machine Learning Training</span> Course FAQs</b></h2>", 
                     :list => [
@@ -767,8 +767,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     learning course  include statistical skills, mathematical skills, programming skills (Python, Java, etc.), Data mining skills, cloud computing skills (like AWS and others),
                      ML skills (K-Nearest Neighbour, random forests, ensemble methods, support vector machines, etc.), database skills (SQL, NoSQL, etc.), etc"},
                     {:question => "What are the fees for the Data Science and Machine Learning course?", 
-                    :answer => "The Data Science and Machine learning course fee in Ba is Rs. 2.5L inclusive of GST. EMI options are available. Take the course for two weeks - if you decide to
-                     withdraw, you're fully refunded. If you opt for an EMI option, your monthly payment will be as low as Rs. 7,200."},
+                    :answer => "The Data Science and Machine learning course fee in Ba is Rs. 3.09L inclusive of GST. EMI options are available. Take the course for two weeks - if you decide to
+                     withdraw, you're fully refunded. If you opt for an EMI option, your monthly payment will be as low as Rs. 10,123."},
                     {:question => "Which companies hire Machine Learning Engineers?", 
                     :answer => "Almost all of the big companies like Google, Amazon, Facebook, Netflix have a requirement of good Machine Learning engineers. Machine learning is being applied in almost
                      all the industries where data can be used to make predictions be it healthcare, IT, finance."},
