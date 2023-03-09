@@ -637,9 +637,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
        
       content.merge!(:join => {:heading => "Connect with an Academic Counsellor",
                          :button => [{:id => "request_callback__one", :text => "REQUEST A CALLBACK", :link => ""}]}) 
-      content.merge!(:tuition_fee => {:heading => "<b>Tuition Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs. 3.19L inclusive of GST. You also get scholarships upto Rs. 25,000 and super affordable EMI options.
-                          Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With scholarship & EMI options, your payment can be as low as Rs. 10,492 per month - that's like your monthly 
-                          grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}, {:id => "tuition_modal_two", :text => "SCHOLARSHIP DETAILS", :link => ""}]})
+      content.merge!(:tuition_fee => {:heading => "<b>Tuition Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs 3.19L inclusive of GST at super affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With EMI options, your payment can be as low as Rs. 10,492 per month - that's like your monthly 
+                          grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
       content.merge!(:faq => {:main => [{:heading => "Program", :list => [{:heading => "<b>What is Scaler Academy?</b>", :desc => "Scaler Academy offers a structured, flexible and guided learning program for software engineers 
                           to accelerate their career. This program is open for all software engineers irrespective of the # of years of work experience or their current place of work.<br>Our features are:<br>1. Structured curriculum that covers CS Fundamentals and System Design via a 
                           project based approach. This curriculum has been industry-vetted and reverse-engineered by analysing what it takes to be a great engineer<br>2. Live classes that are held twice a week, with the timings determined by students in the batch<br>3. Tutors who have built scalable systems in the past 
