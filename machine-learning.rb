@@ -11,40 +11,31 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 :banner => {
                     :breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
                        {:cta => "<b>Machine Learning Course Training</b>"}], 
-                    :heading => "<h1><b>Become an ML Engineer with Scaler's Machine Learning Course</b></h1>", 
-                    :content => ["Study the essential Machine learning topics like Supervised Learning, Unsupervised Learning, Reinforcement Learning, and much more from scratch.", 
+                    :heading => "<h1><b>Machine Learning Course by Scaler</b></h1>", 
+                    :content => ["With this Machine learning course, study essential Machine learning topics like Supervised Learning, Unsupervised Learning, Reinforcement Learning, and much more from scratch.", 
                     "Build your portfolio by working on real-world business projects", 
                     "Placement support + Ongoing guidance after course completion + Opportunity to interact with Machine Learning industry experts"], 
                     :background_image => "course_page/banner/bannernew.png", 
                     :footer => "Next Batch Starts  ",
                     :title => "Enroll for Machine Learning & Data Science course to improve your career prospects."},
-                :briefing => {:heading => "<h2>Why Learn <b><span class=\"highlight\">Machine Learning</span> (ML)?</b></h2>", 
-                    :places => [{:className => "mc", :name => "<h3><b>What is Machine Learning?</b></h3>", :desc => "In a nutshell, Machine learning helps us
-                     automate rules or decision-making processes with the help of mathematics, code, and data. Various Industries are now using Machine
-                      Learning Algorithms to increase their revenue by making predictions about their customer's behavior and upcoming trends in the market.
-                       Automatic Recommendations in your mobile keyboard and e-commerce websites, Google Voice Assistant, Self-driving Cars, and stock 
-                       prediction are some examples that are built using machine learning. A critical aspect of machine learning is to train the model with
-                        the help of available data to get maximum accuracy when deployed to solve real-world problems. 
+                :briefing => {:heading => "<h2><b><span class=\"highlight\">Machine Learning</span> Course Overview</b></h2>", 
+                    :places => [
+                    {:className => "mc", :name => "<h3><b>About Scaler’s Machine Learning Program</b></h3>", 
+                    :desc => "<li>Master essential skills from Excel to Deep Learning, with a comprehensive curriculum designed to make you a solid ML Engineer</li>
+                    <li>Work on real-world projects built in partnership with top companies, with 1:1 guidance from industry mentors.</li>
+                    <li>Receive ongoing support and guidance for job search and interview preparation to kickstart your career in Data Science & Machine Learning</li>
                     "}, 
-                    {:className => "mc", :name => "<h3><b>Why should you take up online Machine Learning training?</b></h3>", 
-                    :desc => "Globally, Machine Learning Engineering is one of the most sought-after, in-demand profession, and almost all industries are
-                     actively hiring ML engineers, so obtaining a Machine Learning skill is highly recommended In this fast-growing field, Scaler is 
-                     offering a Machine Learning & Data Science training course  designed for people belonging to all expertise levels - beginners, 
-                     intermediate and experts. After you complete this Machine Learning course, you will have an in-demand set of skills that are critical
-                     to today's career opportunities in:
-                    <li>Machine Learning Engineer</li>
-                    <li>Human-Centered Machine Learning Designer</li>
-                    <li>NLP Scientist</li>
-                    <li>Junior/Senior/Associate ML Scientist</li>
-                    <li>Portfolio Risk Data Scientist</li>"}, 
-                    {:className => "mc", :name => "<h3><b>What does a Machine Learning Engineer do? </b></h3>", 
-                    :desc => "A machine learning engineer is a highly qualified professional who uses machine learning and software development skills to 
-                    build and design scalable machine learning systems that can automate predictive models . They shall have good knowledge of system design,
-                     Machine Learning Algorithms , Development and Statistics. The primary responsibility of ML Engineer includes,
-                    <li>The ML models are performing optimally with the help of the input dataset.</li>  
-                    <li>Understanding all the features of a model and implementing it correctly.</li>
-                    <li>Knows how to scale and deploy Machine learning models.</li>  
-                    <li>Understand the math behind the machine learning model.</li>"}]},
+                    {:className => "mc", :name => "<h3><b>What is Machine Learning?</b></h3>", :desc => "Machine Learning is a 
+                    fascinating technology that utilizes the power of mathematics, code, and data to automate decision-making processes. 
+                    In simple terms, it enables computers to learn from data and make predictions, without being explicitly programmed. 
+                    From automated recommendations on e-commerce sites to personalized newsfeeds, Machine Learning is transforming the way we live and work. 
+                    "},
+                    {:className => "mc", :name => "<h3><b>What skills will I master with this online Machine Learning training?</b></h3>", 
+                    :desc => "Skills that you will master with this machine learning Program are:
+                    <li>Data analysis and visualization using Python libraries like NumPy, Pandas, Matplotlib, and advanced statistical concepts like probability, Bayes Theorem.</li>  
+                    <li>Building a strong foundation in ML and deep learning concepts like linear regression, polynomial regression, clustering, supervised and unsupervised learning, computer vision, and NLP.</li>  
+                    <li>Experience working with various data tools like SQL, Tableau, Excel, and Google Spreadsheets, and ML operations tools like Flask, Docker, AWS Sagemaker, and Apache Spark.</li>
+                    "}]},
                 :partnership => {:heading => "Work on <b><span class=\"highlight\">Machine Learning</span> projects built in 
                     partnership with top companies</b>", :description => "Work on real industry projects, 
                     get real-time feedback from mentors, and interact with your peers to discuss different 
@@ -744,11 +735,17 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
                     low as Rs 10,492 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]},
-                :questions => {:heading => "<h2><b><span class = 'highlight'>Machine Learning Training</span> Course FAQs</b></h2>", 
+                :questions => {:heading => "<h2><b><span class = 'highlight'>Machine Learning</span> Course FAQs</b></h2>", 
                     :list => [
-                    {:question => "Who should take this Machine Learning course program?", 
+                    {:question => "Who should take this Machine Learning program?", 
                     :answer => "Anyone who wants to learn machine learning and make a career in it, whether they are beginners or professionals, are welcome to enroll for this
                      Data Science & Machine Learning Course. Software, IT, and marketing professionals can enroll part-time or through external programs in Machine Learning."},
+                    {:question => "What does a Machine Learning Engineer do?", 
+                    :answer => "Machine learning engineers:
+                    <li>Implement machine learning algorithms</li>
+                    <li>Design and develop machine learning systems</li>
+                    <li>Run experiments and tests on AI systems to maintain and improve them.</li>
+                    "},
                     {:question => "What kind of jobs or career opportunities are present in the Machine Learning domain?", 
                     :answer => "In Machine Learning, there are a variety of job roles that can be assigned depending on industry needs. Once you finish  our Machine Learning course,
                      you will possess an in-demand set of skills critical to today's career opportunities, which include: Machine Learning Scientist, Machine Learning Engineer,
