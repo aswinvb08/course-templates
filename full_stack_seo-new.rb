@@ -6,11 +6,15 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
     #for v1 we will create a service and course page templates with some placeholder.
 
     Course.find_by(:slug => "full-stack-developer")&.destroy
-    content = {:metadata => {:program => "academy", :header => nil, :links => [{:url => "#curriculum", :text => "Curriculum"}, 
+    content = {:metadata => {:jsonld => "true", :og_tags => {:title => "Full Stack Developer Course by Scaler Academy", 
+              :description => "Enrol in the Full Stack Web Development Course by Scaler to learn Frontend, Backend development and System design & become a successful Full Stack Developer"}, :program => "academy", :header => nil, :links => [{:url => "#curriculum", :text => "Curriculum"}, 
               {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, {:url => "#testimonial", :text => "Review"}, 
               {:url => "#faq", :text => "FAQ"}]}}
-    content.merge!(:banner => {:heading => "<h1><b>Become a Full Stack Developer with Scaler Academy Program</b></h1>", 
-              :content => ["Upskill in <b>DSA & System Design</b> with specialization in Full Stack Development", 
+    content.merge!(:banner => {:breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
+                  {:cta => "Academy", :link => "https://www.scaler.com/academy/"},
+                  {:cta => "<b>Full Stack Developer Course</b>"}], 
+              :heading => "<h1><b>Full Stack Developer Course by Scaler Academy</b></h1>", 
+              :content => ["Upskill in <b>DSA & System Design</b> with this Full Stack Developer Course", 
                   "Build <b>real-world projects</b> by mastering React, MERN, JavaScript, etc.", 
                   "Learn the essential <b>Full Stack development concepts from scratch</b>"], 
                   :background_image => "course_page/banner/banner-svg.svg", 
