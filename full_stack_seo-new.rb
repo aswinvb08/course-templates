@@ -24,7 +24,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                               <li>Programming constructs, algorithms, and data structures.</li>  <li>Advanced data structures, problem-solving, and computer science fundamentals.</li>  <li>Develop software and systems using OOP principles and system design techniques.</li> 
                               <li>Build full-stack apps using technologies like REST APIs, MVC, and databases like MongoDB.</li> <li>Build efficient data processing systems with ETL pipelines, big data tech, and cloud services.</li>"}]})
     content.merge!(:glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's Full 
-                      Stack Developer program</h2>", "sub_heading"=>"Scaler Academy's full-stack development program 
+                      Stack Developer Program</h2>", "sub_heading"=>"Scaler Academy's full-stack development program 
                       helps you learn exactly everything that you need to solidify your tech career", 
                       :cards => [{:img => "academy/svg/at-a-glance/structured.svg", :title => "<b>Structured, industry-vetted curriculum</b>"}, {:img => "academy/svg/at-a-glance/live-classes.svg", :title => "<b>Live classes by faculty</b> who have been there, done that"}, 
                           {:img => "academy/svg/at-a-glance/project.svg", :title => "<b>Practical experience</b> through <b>real-life projects</b>"}, 
@@ -33,7 +33,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                                   :title => "<b>Career support</b> via a dedicated recruitment team, alumni network, etc"}]})
     content.merge!(:academy_curriculum => 
                                   {
-                                    :heading => "<h2><b>Curriculum</b> is designed to make you a <span class='highlight'><b>solid engineer</b></span></h2>",
+                                    :heading => "<b>Curriculum</b> is designed to make you a <span class='highlight'><b>solid engineer</b></span>",
                                     :sections => [
                                       {
                                         :heading => 'Beginner',
@@ -642,38 +642,164 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                          :button => [{:id => "request_callback__one", :text => "REQUEST A CALLBACK", :link => ""}]}) 
       content.merge!(:tuition_fee => {:heading => "<b>Full Stack Development Course Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs 3.19L inclusive of GST at super affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With scholarship & EMI options, your payment can be as low as Rs. 10,492 per month - that's like your monthly 
                           grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
-      content.merge!(:faq => {:main => [{:heading => "Program", :list => [{:heading => "<b>What is Scaler Academy’s full-stack development program?</b>", :desc => "Scaler Academy offers a structured, flexible and guided learning program for software engineers 
-                          to accelerate their career. This program is open for all software engineers irrespective of the # of years of work experience or their current place of work.<br>Our features are:<br>1. Structured curriculum that covers CS Fundamentals and System Design via a 
-                          project based approach. This curriculum has been industry-vetted and reverse-engineered by analysing what it takes to be a great engineer<br>2. Live classes that are held twice a week, with the timings determined by students in the batch<br>3. Tutors who have built scalable systems in the past 
-                          and understand the real-life importance of DSA and System Design, not just interview-relevant material<br>4. Quick doubt resolution from our 100+ Teaching Assistants<br>5. Aspirational peer group and access to ScalerChat, our internal communication tool wherein you can collaborate with others on projects, 
-                          get authentic interview experiences and share job-referrals<br>6. Flexible curriculum that help you continue learning despite your hectic work schedule. We provide recorded lectures to view later and also allow you to move between batches at NO cost<br>7. Career support - we provide job opportunities via our 100+ employer partners, 
-                          mock interview services and career planning services"}, {:heading => "<b>Who is eligible for Scaler Academy's Full Stack course?</b>", :desc => "Software engineers with any number of years of experience can choose to join Scaler Academy's Full Stack program. Applicants currently in college (1st, 2nd, 3rd or final year of college) could consider to join Scaler Edge, our college student focused product. Please visit www.scaler.com/edge for more detail"}, 
-                          {:heading => "<b>When are the live classes held?</b>", :desc => "Live classes are normally held 2 times a week, with the exact class days and timings being determined by the batch. However, given all learners would be software engineers that are currently working, the classes would be held in the late evening or night on weekdays and any suitable time over the weekends."}, {:heading => "<b>What happens if I miss a lecture in this online full stack developer course?</b>", :desc => "All lectures are recorded and you will have access to the recordings after the lecture is completed."}, 
-                          {:heading => "<b>Can I attend this full stack developer training part-time?</b>", :desc => "The program has a fixed schedule, during which you would attend live-lectures with a dedicated instructor, Teaching Assistant, and personal mentor. 15 hour weekly commitment is required for the duration of the program in order to achieve positive results."}, {:heading => "<b>Are full stack developers in demand in 2023?</b>", 
-                          :desc => "A full-stack developer is one of the high-demand jobs in the industry. Companies pay them handsomely since they contribute the most to software projects. Thus, whether you are a fresher or an experienced developer, you will always be in demand in the software industry, with great opportunities waiting for you."}, {:heading => "<b>Will I get a full-stack developer certification?</b>", 
-                          :desc => "After the end of the full-stack developer course, you will receive a course completion certificate."}, {:heading => "<b>Can I enroll only into the full-stack module of the Scaler Academy Program?</b>", :desc => "No, we feel that before jumping into a full-stack module, you must learn the basics of programming, cs fundamentals, and Data Structures & Algorithms. These skills are essential to have before you can begin with a full-stack specialization."}]}, {:heading => "Curriculum", :list => [{:heading => "<b>Do all sections start at the same time?</b>", 
-                          :desc => "Yes, all sections start at the same time but end at different times, depending on the duration of the course for that section. The Advanced section ends in 9 months, the Intermediate section ends in 11 months and the Beginner section ends in 13 months."}, {:heading => "<b>Should I join the Begineer, Intermediate or Advanced section?</b>", :desc => "Your eligibility for the Beginner, 
-                          Intermediate or Advanced section is decided basis an entrance test."}, {:heading => "<b>What is the duration of this program?</b>", :desc => "Depending on which section you are allotted, the duration of the course could range from 9 to 13 months."}]}, {:heading => "Teaching", :list => [{:heading => "<b>What is the role of the tutor?</b>", :desc => "Our tutors would teach you the concepts mentioned in the course curriculum and would take live classes 3 times a week. There would be different tutors teaching different topics"}, {:heading => "<b>What are the profiles of the tutors?</b>", 
-                          :desc => "Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. They have hands-on, real-life experience and don't just have theoretical knowledge. For more detail on our tutors, please visit www.scaler.com/academy"}, {:heading => "<b>How will my doubts get solved?</b>", :desc => "We have 100+ Teaching Assistants that would solve your doubts in prompt-manner. These doubts could be related to the class content or regarding the assignments."}]}, 
-                          {:heading => "Teaching Assistants", :list => [{:heading => "<b>What is the role of the Teaching Assistant?</b>", :desc => "Teaching Assistants (TAs) work closely with the tutors to help students with their assignments and homework. 
-                          They answer students' doubts via chat and video call. You would interact with TA's regularly outside of the live-class sessions to get more hands-on problem solving experience."}, {:heading => "<b>What are the profiles of the Teaching Assistant?</b>", :desc => "Teaching Assistants (TAs) mostly come from strong problem-solving backgrounds. They can be from a range of experiences but share a common interest towards coding and teaching alike."}, {:heading => "<b>How many Teaching Assistants are allotted per batch?</b>", :desc => "2 Teaching Assistants (TAs) are allotted per batch of 40-50 students. This ensures each student gets enough time with their TA and gets their queries resolved instantly."}, {:heading => "<b>What is the process of resolving doubts?</b>", :desc => "When a student has a doubt, he/she would raise a 'Help Request'. This 'Help Request' would be circulated within the peer group first in order to foster a sense of giving back and create a sense of community. In parallel, the Teaching Assistant is also alerted with regards to this 'Help Request'. The doubt can then be either clarified via the peer group or via the Teaching Assistants via text or via video call. If a video call is done, the Teaching Assistant can also share his/her screen to resolve the issue and help you understand the concept better. These video calls are done 1:1."}]}, {:heading => "Entrance Test", :list => [{:heading => "<b>What is the format of the initial 30 min test?</b>", :desc => "The test will comprise of Multiple Choice Questions (MCQs) on the following topics:<br>1. Logical reasoning and aptitude<br>2. Basic mathematics (topics like permutation and combinations, probability etc.)<br>3. Basic time complexity analysis<br>4. Questions on figuring out the outputs of small code snippets (in any of C++/Java/Python)"}, {:heading => "<b>Can this test be taken on mobile?</b>", :desc => "Yes! We have designed the test so that it can be easily taken on mobile as well. However for best results, we would advise you to take the test in a quiet setting with minimal disruptions."}, {:heading => "<b>Do I need to prepare for this initial 30 min test?</b>", :desc => "No, you do not need any special preparation for this test.<br>However, if you would like, you could brush up on simple concepts like arrangement, derangement, and a few simple aptitude questions. For time complexity analysis and code comprehension questions, you could choose to practice questions like :<br>1. https://www.interviewbit.com/problems/whilecmpl/ <br>2. https://www.interviewbit.com/problems/nestedcmpl2/ <br>3. https://www.interviewbit.com/problems/array2d/ <br>4. https://www.interviewbit.com/problems/whilecmpl/"}]}, {:heading => "Mentors", :list => [{:heading => "<b>What is the role of the mentor?</b>", :desc => "Mentors provide personalized advice on your career. They also help you with mock interviews, help with your resume and provide career advice. Mentors do 1:1 video calls with you for 30-60 mins each for each session. It is advisable to do 2 mentor sessions every month."}, {:heading => "<b>What are the profiles of the mentors?</b>", :desc => "Our mentors mostly work at tier 1 product companies and would be experienced software professionals. For more information, please visit www.scaler.com/mentor"}, {:heading => "<b>How many mentors are allotted per batch?</b>", :desc => "Based on your background, we offer a few mentors for you to choose from at the beginning of the course. You could choose 1 mentor of your choice from this pool. We try to ensure that your mentor is relatable to your background."}, {:heading => "<b>Can I change my mentor?</b>", :desc => "We would entertain a request to change a mentor, but a change in mentor is done only on a case-by-case basis."}]}, {:heading => "Placement Support", :list => [{:heading => "<b>What kind of placement support will I be given?</b>", :desc => "We provide three kinds of placement support:<br>1) Through our network with hundreds of employer partners, we would arrange for you to have access to job opportunities in order to accelerate your career or change companies.<br>2) Our student, tutor and mentor community frequently posts job opportunities from their network as well, via ScalerChat (please visit www.scaler.com/mentor for details)<br>3) 
-                          Preparation assistance via mock interviews, resume reviews etc<br>With the right teaching, curriculum and guidance, we are confident you will achieve your goals."}, 
-                          {:heading => "<b>Could someone help me do mock interviews?</b>", :desc => "Yes! We strive to help you prepare for your job interviews via mock interviews. 
-                          Mock interviews can be done in two parts:<br>1) Students can choose to do mock interviews with their mentors (as mentioned in the 'Mentor' section of these FAQs).<br>2) 
-                          We would connect you with a working professional in the company in which you would be interviewing. This would help you get in-depth knowledge of 
-                          the company and do a more focused mock-interview to get prepared."}, 
-                          {:heading => "<b>Who are your employer partners?</b>", :desc => "Our employer partners range from technology MNCs (Multinational Corporations) to fast-growing startups to companies in the financial 
-                          services space. Please visit www.scaler.com/mentor to learn more about where our alumni are placed."}, {:heading => "<b>What kind of roles do employers hire for?</b>", :desc => "Employers hire for a wide 
-                          variety of roles, including full-stack engineering and backend-engineering across a range of work experience. We would be careful to ensure that you apply to companies that match your qualifications and strengths."}, 
-                          {:heading => "<b>When would employers come to Scaler Academy to hire engineers?</b>", :desc => "Employers typically hire engineers all through the year, depending on their requirements. When employers do approach us, 
-                          we would make the opportunity visible to students in the batch. Students are welcome to apply for opportunities that interest them. Each opportunity would have a test associated with it and students would be referred based on their performance in these 
-                          tests and other factors like attendance and their problem-solving percentage."}]}, 
-                          {:heading => "Tuition Fee", :list => [{:heading => "<b>What is the total tuition fee?</b>", :desc => "The total tuition fee including GST is INR 3.19L. With EMI, this can drop as low as ~INR 10,492/month (equivalent to your monthly grocery bill!)"}, 
-                          {:heading => "<b>Are there scholarships?</b>", :desc => "Yes!<br><b>Way of getting exciting scholarships at Scaler Academy</b><br><b>Get up to INR 25,000 as scholarship basis your performance in the 30 minutes entrance test!</b>"}, 
-                          {:heading => "<b>Can I pay in EMIs?</b>", :desc => "<b>Yes! Via our NBFC partners, we provide a range of EMI options, from zero-interest EMI options 
-                          (upto 24 months) and longer tenure loans of 36 months. The longer tenure loans of 
-                          36 months will include the interest cost.</b>"}]}]})
-
+      content.merge!(:questions => {:heading => "<h2><b><span class = 'highlight'>Full Stack Web Development</span> Course FAQs</b></h2>", 
+                          :list => [
+                          {:question => "What is Scaler Academy’s full-stack development program?", 
+                          :answer => "Scaler Academy offers a structured, flexible and guided learning program for software engineers to accelerate their career. 
+                          This program is open for all software engineers irrespective of the # of years of work experience or their current place of work.
+                          Our features are:
+                          <li>Structured curriculum that covers CS Fundamentals and System Design via a project based approach. 
+                          This curriculum has been industry-vetted and reverse-engineered by analysing what it takes to be a great engineer</li>
+                          <li>Live classes that are held twice a week, with the timings determined by students in the batch</li>
+                          <li>Tutors who have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material</li>
+                          <li>Quick doubt resolution from our 100+ Teaching Assistants</li>
+                          <li>Aspirational peer group and access to ScalerChat, our internal communication tool wherein you can collaborate with others on projects, get authentic interview experiences and share job-referrals</li>
+                          <li>Flexible curriculum that help you continue learning despite your hectic work schedule. 
+                          We provide recorded lectures to view later and also allow you to move between batches at NO cost</li>
+                          <li>Career support - we provide job opportunities via our 100+ employer partners, mock interview services and career planning services</li>"},
+                          {:question => "Who is eligible for Scaler Academy’s Full Stack course?", 
+                          :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy’s Full Stack program. 
+                          Applicants currently in college (1st, 2nd, 3rd or final year of college) could consider to join Scaler Edge, our college student focused product. 
+                          Please visit www.scaler.com/edge for more detail"},
+                          {:question => "When are the live classes held?", 
+                          :answer => "Live classes are normally held 2 times a week, with the exact class days and timings being determined by the batch. 
+                          However, given all learners would be software engineers that are currently working, the classes would be held in the late evening or night on weekdays and any suitable time over the weekends."},
+                          {:question => "What happens if I miss a lecture in this online full stack developer course?",
+                          :answer => "All lectures are recorded and you will have access to the recordings after the lecture is completed."},
+                          {:question => "Can I attend this full stack developer training part-time?",
+                          :answer => "The program has a fixed schedule, during which you would attend live-lectures with a dedicated instructor, Teaching Assistant, and personal mentor. 
+                          15 hour weekly commitment is required for the duration of the program in order to achieve positive results."},
+                          {:question => "Are full stack developers in demand in 2023?",
+                          :answer => "A full-stack developer is one of the high-demand jobs in the industry. 
+                          Companies pay them handsomely since they contribute the most to software projects. 
+                          Thus, whether you are a fresher or an experienced developer, you will always be in demand in the software industry, with great opportunities waiting for you."},
+                          {:question => "Will I get a full-stack developer certification?",
+                          :answer => "After the end of the full-stack developer course, you will receive a course completion certificate"},
+                          {:question => "Can I enroll only into the full-stack module of the Scaler Academy Program?",
+                          :answer => "No, we feel that before jumping into a full-stack module, you must learn the basics of programming, cs fundamentals, and Data Structures & Algorithms. 
+                          These skills are essential to have before you can begin with a full-stack specialization."},
+                          {:question => "What are the roles and responsibilities of a Full Stack Developer?",
+                          :answer => "Full stack developers are computer programmers who are proficient in both front and back end coding- 
+                          <li>Designing user interactions on websites</li>
+                          <li>Developing servers and databases for website functionality.</li>
+                          <li>Coding for mobile platforms.</li>
+                          <li>Designing & developing APIs</li>"},
+                          {:question => "What is the average salary for a Full Stack developer?",
+                          :answer => "According to Glassdoor, the average salary for Full Stack Developers is ₹5,50000 per year in India. 
+                          Full Stack Developers earn an average salary of $98,524 in the United States. 
+                          For more detailed information, you can visit this blog."},
+                          {:question => "How are Full stack developers different from software engineers?",
+                          :answer => "While Full Stack Developers focus on web applications, Software Engineers specialize in native apps. 
+                          And while the term Software Engineer is broad and could mean a variety of things, a Full Stack Developer's skill set is laser-focused on web development"},
+                          {:question => "Is full-stack web development difficult to learn?",
+                          :answer => "Full-stack developers possess a wide range of abilities and are expected to have comprehensive programming knowledge. 
+                          But, its definitely possible to learn these skills with dedication and practice."},
+                          {:question => "What level of coding proficiency is necessary to be successful as a full stack web developer?",
+                          :answer => "Full Stack Developers must be extremely versatile, with in-depth knowledge of HTML, CSS, and JavaScript. 
+                          Also, should be familiar with server-side languages such as Python, Ruby, or Node.js."},
+                          {:question => "Do all sections start at the same time?",
+                          :answer => "Yes, all sections start at the same time but end at different times, depending on the duration of the course for that section. 
+                          The Advanced section ends in 9 months, the Intermediate section ends in 11 months and the Beginner section ends in 13 months."},
+                          {:question => "Should I join the Beginner, Intermediate or Advanced section of this Full-stack developer program?",
+                          :answer => "Your eligibility for the Beginner, Intermediate or Advanced section is decided basis an entrance test."},
+                          {:question => "What is the duration of this full stack developer course?",
+                          :answer => "Depending on which section you are allotted, the duration of the course could range from 9 to 13 months."},
+                          {:question => "What is the format of the initial 30 min test?",
+                          :answer => "The test will comprise of Multiple Choice Questions (MCQs) on the following topics:
+                          <li>Logical reasoning and aptitude</li>
+                          <li>Basic mathematics (topics like permutation and combinations, probability etc.)</li>
+                          <li>Basic time complexity analysis</li>
+                          <li>Questions on figuring out the outputs of small code snippets (in any of C++/Java/Python)</li>"},
+                          {:question => "Can this test be taken on mobile?",
+                          :answer => "Yes! We have designed the test so that it can be easily taken on mobile as well. 
+                          However for best results, we would advise you to take the test in a quiet setting with minimal disruptions"},
+                          {:question => "Do I need to prepare for this initial 30 min test?",
+                          :answer => "No, you do not need any special preparation for this test.
+                          However, if you would like, you could brush up on simple concepts like arrangement, derangement, and a few simple aptitude questions."},
+                          {:question => "What is the role of the tutor in this course?",
+                          :answer => "Our tutors would teach you the concepts mentioned in the course curriculum and would take live classes 3 times a week. 
+                          There would be different tutors teaching different topics"},
+                          {:question => "What are the profiles of the tutors?",
+                          :answer => "Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. They have hands-on, real-life experience and don't just have theoretical knowledge. For more detail on our tutors, please visit www.scaler.com/academy"},
+                          {:question => "How will my doubts get solved?",
+                          :answer => "We have 100+ Teaching Assistants that would solve your doubts in prompt-manner. 
+                          These doubts could be related to the class content or regarding the assignments."},
+                          {:question => "What is the role of the Teaching Assistant?",
+                          :answer => "Teaching Assistants (TAs) work closely with the tutors to help students with their assignments and homework. 
+                          They answer students' doubts via chat and video call. 
+                          You would interact with TA's regularly outside of the live-class sessions to get more hands-on problem solving experience."},
+                          {:question => "What are the profiles of the Teaching Assistant?",
+                          :answer => "Teaching Assistants (TAs) mostly come from strong problem-solving backgrounds. 
+                          They can be from a range of experiences but share a common interest towards coding and teaching alike."},
+                          {:question => "How many Teaching Assistants are allotted per batch?",
+                          :answer => "2 Teaching Assistants (TAs) are allotted per batch of 40-50 students. 
+                          This ensures each student gets enough time with their TA and gets their queries resolved instantly."},
+                          {:question => "What is the process of resolving doubts?",
+                          :answer => "When a student has a doubt, he/she would raise a 'Help Request'. 
+                          This 'Help Request' would be circulated within the peer group first in order to foster a sense of giving back and create a sense of community. 
+                          In parallel, the Teaching Assistant is also alerted with regards to this 'Help Request'. 
+                          The doubt can then be either clarified via the peer group or via the Teaching Assistants via text or via video call. 
+                          If a video call is done, the Teaching Assistant can also share his/her screen to resolve the issue and help you understand the concept better. 
+                          These video calls are done 1:1."},
+                          {:question => "What are the prerequisites for enrolling in this full stack web developer course?",
+                          :answer => "No, you do not need any prerequisites to enroll in this full-stack web developer program. 
+                          It caters to both beginners and experienced professionals seeking to enhance their web development skills. 
+                          However, there will be a 30 min initial MCQ test where your basics will be checked."},
+                          {:question => "What is the role of the mentor?",
+                          :answer => "Mentors provide personalized advice on your career. 
+                          They also help you with mock interviews, help with your resume and provide career advice. 
+                          Mentors do 1:1 video calls with you for 30-60 mins each for each session. 
+                          It is advisable to do 2 mentor sessions every month."},
+                          {:question => "What are the profiles of the mentors?",
+                          :answer => "Our mentors mostly work at tier 1 product companies and would be experienced software professionals. 
+                          For more information, please visit www.scaler.com/mentor"},
+                          {:question => "How many mentors are allotted per batch?",
+                          :answer => "Based on your background, we offer a few mentors for you to choose from at the beginning of the course. 
+                          You could choose 1 mentor of your choice from this pool. 
+                          We try to ensure that your mentor is relatable to your background."},
+                          {:question => "Can I change my mentor?",
+                          :answer => "We would entertain a request to change a mentor, but a change in mentor is done only on a case-by-case basis."},
+                          {:question => "What kind of placement support will I be given?",
+                          :answer => "We provide three kinds of placement support once you complete this full stack course:
+                          <li>Through our network with hundreds of employer partners, we would arrange for you to have access to job opportunities in order to accelerate your career or change companies.</li>
+                          <li>Our student, tutor and mentor community frequently posts job opportunities from their network as well, via ScalerChat (please visit www.scaler.com/mentor for details)</li>
+                          <li>Preparation assistance via mock interviews, resume reviews etc
+                          With the right teaching, curriculum and guidance, we are confident you will achieve your goals.</li>"},
+                          {:question => "Could someone help me do mock interviews?",
+                          :answer => "Yes! We strive to help you prepare for your job interviews via mock interviews. Mock interviews can be done in two parts:
+                          <li>Students can choose to do mock interviews with their mentors (as mentioned in the 'Mentor' section of these FAQs).</li>
+                          <li>We would connect you with a working professional in the company in which you would be interviewing. 
+                          This would help you get in-depth knowledge of the company and do a more focused mock-interview to get prepared.</li>"},
+                          {:question => "Who are your employer partners?",
+                          :answer => "Our employer partners range from technology MNCs (Multinational Corporations) to fast-growing startups to companies in the financial services space. 
+                          Please visit www.scaler.com/mentor to learn more about where our alumni are placed."},
+                          {:question => "What are the top companies hiring Full Stack Developers?",
+                          :answer => "Here are the best companies Full stack Developers-
+                          <li>Cognizant Technology</li>
+                          <li>Capgemini</li>
+                          <li>Mindtree</li>
+                          <li>Wipro</li>
+                          <li>Deloitte</li>
+                          <li>Accenture</li>
+                          <li>IBM</li>"},
+                          {:question => "What kind of roles do employers hire for?",
+                          :answer => "Employers hire for a wide variety of roles, including full-stack engineering and backend-engineering across a range of work experience. 
+                          We would be careful to ensure that you apply to companies that match your qualifications and strengths."},
+                          {:question => "When would employers come to Scaler Academy to hire full stack developers?",
+                          :answer => "Employers typically hire full stack developers all through the year, depending on their requirements. 
+                          When employers do approach us, we would make the opportunity visible to students in the batch. 
+                          Students are welcome to apply for opportunities that interest them. 
+                          Each opportunity would have a test associated with it and students would be referred based on their performance in these tests and other factors like attendance and their problem-solving percentage."},
+                          {:question => "What is the total tuition fee?",
+                          :answer => "The total tuition fee including GST is INR 3.19. With EMI, this can drop as low as ~INR 10,492/month (equivalent to your monthly grocery bill!)"},
+                          {:question => "Are there scholarships?",
+                          :answer => "Yes!
+                          Way of getting exciting scholarships at Scaler Academy
+                          Get up to INR 25,000 as scholarship basis your performance in the 30 minutes entrance test!"},
+                          {:question => "Can I pay in EMIs?",
+                          :answer => "Yes! Via our NBFC partners, we provide a range of EMI options, from zero-interest EMI options (upto 12 months) and longer tenure loans of 24 months and 36 months. 
+                          The longer tenure loans of 24 months and 36 months will include the interest cost."},
+                          ]})
     CoursePageTemplateService.new(
       title: "Full Stack Developer",
       content: content
