@@ -7,7 +7,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
         {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
         {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
         content.merge!(:banner => {:breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
-                {:cta => "Academy", :link => "https://www.scaler.com/academy/"},
+                {:cta => "<b>Academy</b>", :link => "https://www.scaler.com/academy/"},
                 {:cta => "<b>Web Development Course</b>"}],
                 :heading => "<h1><b>Web Development Course by Scaler Academy</b></h1>", 
                 :content => ["Get down and deep into how HTML, CSS and JavaScript work together, and build beautiful websites  in this web development course", 

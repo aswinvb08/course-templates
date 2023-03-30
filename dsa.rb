@@ -7,7 +7,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
               {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
       content.merge!(:banner => {:breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
-              {:cta => "Academy", :link => "https://www.scaler.com/academy/"},
+              {:cta => "<b>Academy</b>", :link => "https://www.scaler.com/academy/"},
               {:cta => "<b>Data Structures And Algorithms</b>"}],
               :heading => "<h1><b>Master Data Structures and Algorithms With the Scaler Academy Program</b></h1>", 
               :content => ["Secure product interviews with understanding of crucial data structures and algorithms, and their implementation", 
