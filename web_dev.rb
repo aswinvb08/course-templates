@@ -6,8 +6,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
       content = {:metadata => {:program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
         {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
         {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
-        content.merge!(:banner => {:heading => "<h1><b>Master Web Development with the Scaler Academy Program</b></h1>", 
-                :content => ["Get down and deep into how HTML, CSS and JavaScript work together, and build beautiful websites", 
+        content.merge!(:banner => {:heading => "<h1><b>Web Development Course by Scaler Academy</b></h1>", 
+                :content => ["Get down and deep into how HTML, CSS and JavaScript work together, and build beautiful websites  in this web development course", 
                 "Master the Fundamentals of Web Development, Web Programming, and Database Management from scratch", 
                 "Learn how popular web frameworks like ReactJS and NodeJS are used in backend and frontend"],
                 :background_image => "course_page/banner/bannernew.png",
