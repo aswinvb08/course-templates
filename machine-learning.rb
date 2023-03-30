@@ -20,7 +20,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :title => "Enroll for Machine Learning & Data Science course to improve your career prospects."},
                 :briefing => {:heading => "<h2><b><span class=\"highlight\">Machine Learning</span> Course Overview</b></h2>", 
                     :places => [
-                    {:className => "mc", :name => "<h3><b>About Scaler’s Machine Learning Program</b></h3>", 
+                    {:className => "mc", :name => "<h3><b>About Scaler's Machine Learning Program</b></h3>", 
                     :desc => "<li>Master essential skills from Excel to Deep Learning, with a comprehensive curriculum designed to make you a solid ML Engineer</li>
                     <li>Work on real-world projects built in partnership with top companies, with 1:1 guidance from industry mentors.</li>
                     <li>Receive ongoing support and guidance for job search and interview preparation to kickstart your career in Data Science & Machine Learning</li>
