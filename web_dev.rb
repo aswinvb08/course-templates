@@ -3,7 +3,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
       return unless Rails.is_scaler?
   
       Course.find_by(:slug => "web-development")&.destroy
-      content = {:metadata => {:program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
+      content = {:metadata => {:og_tags => {:title => "Web Development Course by Scaler Academy"}, :program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
         {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
         {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
         content.merge!(:banner => {:heading => "<h1><b>Web Development Course by Scaler Academy</b></h1>", 
