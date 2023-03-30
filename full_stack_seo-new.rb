@@ -17,7 +17,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                   :background_image => "course_page/banner/banner-svg.svg", 
                   :title => "The first but giant step towards your dream<br> Full Stack Development career!"}) 
     content.merge!(:briefing => {:heading => "<h2><b>Full <span class=\"highlight\">Stack Web Development</span> Course Overview</b></h2>", 
-                      :places => [{:className => "mc", :name => "<h3><b>About Scaler Academy’s Full Stack Developer Course</b></h3>", :desc => "<li>Learn practical coding skills through real-life projects</li>
+                      :places => [{:className => "mc", :name => "<h3><b>About Scaler Academy's Full Stack Developer Course</b></h3>", :desc => "<li>Learn practical coding skills through real-life projects</li>
                                     <li>Structured curriculum covering programming constructs, DSA, CS fundamentals, and software/system design taught by industry veterans via live classes</li>
                                     <li>Industry-expert faculty and 1:1 mentorship with a peer group of 2,000+ Scaler students and alumni.</li>"},
                           {:className => "mc", :name => "<h3><b>What is Full Stack Web Development and why is it important to learn?</b></h3>", :desc => "Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry."}, 
@@ -645,7 +645,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
       content.merge!(:questions => {:heading => "<h2><b><span class = 'highlight'>Full Stack Web Development</span> Course FAQs</b></h2>", 
                           :list => [
-                          {:question => "What is Scaler Academy’s full-stack development program?", 
+                          {:question => "What is Scaler Academy's full-stack development program?", 
                           :answer => "Scaler Academy offers a structured, flexible and guided learning program for software engineers to accelerate their career. 
                           This program is open for all software engineers irrespective of the # of years of work experience or their current place of work.
                           Our features are:
@@ -658,8 +658,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           <li>Flexible curriculum that help you continue learning despite your hectic work schedule. 
                           We provide recorded lectures to view later and also allow you to move between batches at NO cost</li>
                           <li>Career support - we provide job opportunities via our 100+ employer partners, mock interview services and career planning services</li>"},
-                          {:question => "Who is eligible for Scaler Academy’s Full Stack course?", 
-                          :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy’s Full Stack program. 
+                          {:question => "Who is eligible for Scaler Academy's Full Stack course?", 
+                          :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy's Full Stack program. 
                           Applicants currently in college (1st, 2nd, 3rd or final year of college) could consider to join Scaler Edge, our college student focused product. 
                           Please visit www.scaler.com/edge for more detail"},
                           {:question => "When are the live classes held?", 
@@ -686,8 +686,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           <li>Coding for mobile platforms.</li>
                           <li>Designing & developing APIs</li>"},
                           {:question => "What is the average salary for a Full Stack developer?",
-                          :answer => "According to Glassdoor, the average salary for Full Stack Developers is ₹5,50000 per year in India. 
-                          Full Stack Developers earn an average salary of $98,524 in the United States. 
+                          :answer => "According to Glassdoor, the average salary for Full Stack Developers is INR 5,50000 per year in India. 
+                          Full Stack Developers earn an average salary of USD 98,524 in the United States. 
                           For more detailed information, you can visit this blog."},
                           {:question => "How are Full stack developers different from software engineers?",
                           :answer => "While Full Stack Developers focus on web applications, Software Engineers specialize in native apps. 

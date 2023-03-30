@@ -13,7 +13,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 :background_image => "course_page/banner/bannernew.png",
                 :title => "Build An Impressive Portfolio and Kickstart Your Career"})
         content.merge!(:briefing => {:heading => "<h2><b><span class='highlight'>Web Development</span> Course Overview</b></h2>",
-                :places => [{:name => "<h3><b>About Scaler Academy’s Web Development Program</b></h3>",
+                :places => [{:name => "<h3><b>About Scaler Academy's Web Development Program</b></h3>",
                 :desc => "<li>Master programming fundamentals in Python/Java, advanced DSA, and CS fundamentals with live classes and 1:1 mentorship.</li>
                 <li>Learn software and system design, including OOP principles, system design, and case studies of building real systems.</li>
                 <li>Choose between FullStack or Data Engineering specialization, with intensive practical experience through real-life projects and career support.</li>
@@ -862,8 +862,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
         content.merge!(:questions => {:heading => "<h2><b><span class = 'highlight'>Web Development</span> Course FAQs</b></h2>", 
         :list => [
-        {:question => "What is Scaler Academy’s online web development program?", 
-        :answer => "Scaler Academy’s online web development program is a comprehensive course designed to teach web development concepts, tools, and techniques. 
+        {:question => "What is Scaler Academy's online web development program?", 
+        :answer => "Scaler Academy's online web development program is a comprehensive course designed to teach web development concepts, tools, and techniques. 
         It covers a range of topics such as programming fundamentals, data structures, algorithms, software and system design, and specialization in full-stack development or data engineering. 
         The curriculum also includes projects and assignments to provide practical experience to students."},
         {:question => "How this Web Developer program is different from other programs?", 
@@ -873,8 +873,8 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
         <li>Intensive practical experience through real-life projects and applications.</li>
         <li>Regular 1:1 mentorship from product industry veterans.</li>
         <li>Offers career services like access to job opportunities, mock interviews, and resume building.</li>"},
-        {:question => "Who is eligible for Scaler Academy’s online Web developer courses?", 
-        :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy’s Web developer program. 
+        {:question => "Who is eligible for Scaler Academy's online Web developer courses?", 
+        :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy's Web developer program. 
         Applicants currently in college (1st, 2nd, 3rd, or final year of college) could consider joining Scaler Edge, our college student-focused product. 
         Please visit www.scaler.com/edge for more detail."},
         {:question => "When are the live classes held?", 
@@ -896,7 +896,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
         Additionally, they may create website content and optimize it for search engines."},
         {:question => "What is the average salary for a Web developer?", 
         :answer => "The average salary for a web developer varies by country and experience level. 
-        According to Glassdoor, the average salary is ₹9,88,940 per year for a Web Developer in India. 
+        According to Glassdoor, the average salary is INR 9,88,940 per year for a Web Developer in India. 
         In the United States, the average salary for a Web Developer is $73,425 per year."},
         {:question => "How web developers are different from software engineers?", 
         :answer => "Web developers focus on designing and building websites and web applications, while software engineers specialize in creating programs for operating systems. 
