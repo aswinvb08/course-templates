@@ -12,28 +12,24 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 "Learn how popular web frameworks like ReactJS and NodeJS are used in backend and frontend"],
                 :background_image => "course_page/banner/bannernew.png",
                 :title => "Build An Impressive Portfolio and Kickstart Your Career"})
-        content.merge!(:briefing => {:heading => "<h2>An Introduction to <b><span class='highlight'>Web Development</span>?</b></h2>",
-                :places => [{:name => "<h3><b>What is Web Development?</b></h3>",
-                :desc => "There's a lot of work that's done behind the scenes to make a website look great, work well, and provide 
-                an excellent user experience. Yes, we are referring to web development which involves building, creating, 
-                and maintaining new and existing websites. It can range from developing a simple static page of plain text 
-                to complicated web applications, social networking pages, and electronic businesses. Web development includes 
-                aspects such as web design, web programming, and database management. The presence of these tools makes 
-                it easier for anyone wanting to create or edit their own website."},
-                {:name => "<h3><b>Why is Web Development important?</b></h3>",
-                :desc => "The current world's environment makes it almost impossible to do business without a good website, 
-                and this is where web design and web development come into play. Maintaining an updated website means owning 
-                a key to the primary platform that showcases your products and services to the netizens. 
-                The best way to do that is through learning web development as it conveys information the right way. 
-                Additionally, you can tackle SEO, attract potential customers/clients, convey messages, and conduct e-business."},
-                {:name => "<h3><b>Why should you choose a career in Web Development?</b></h3>",
-                :desc => "Web development is in high demand and well paid around the globe, making it a great career option. Having 
-                a solid grasp of Web Development will help you to secure a promising career right after you complete your course. 
-                Besides, this field is constantly in demand; evolving and challenging, which means you’ll always have many chances 
-                to explore new tools, technologies and learn new skills. The high demand, easy-to-learn and fun-to-experience 
-                lifestyle of a web developer makes it an ideal career choice for someone seeking to learn code. Having said that,  
-                Web Development is the field that provides a plethora of opportunities for hands-on learning."}]})
-        content.merge!(:glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's <b>Web Development Program</b></h2>",
+        content.merge!(:briefing => {:heading => "<h2><b><span class='highlight'>Web Development</span> Course Overview</b></h2>",
+                :places => [{:name => "<h3><b>About Scaler Academy’s Web Development Program</b></h3>",
+                :desc => "<li>Master programming fundamentals in Python/Java, advanced DSA, and CS fundamentals with live classes and 1:1 mentorship.</li>
+                <li>Learn software and system design, including OOP principles, system design, and case studies of building real systems.</li>
+                <li>Choose between FullStack or Data Engineering specialization, with intensive practical experience through real-life projects and career support.</li>
+                "},
+                {:name => "<h3><b>What is Web Development and why is it important to learn?</b></h3>",
+                :desc => "A process of creating a visually appealing website by designing and coding a layout that is functional, user-friendly, & compatible with a wide range of devices and browsers. Learning web development is important because:
+                <li>Career prospects: Learn web dev to gain skills and pursue a career in high-demand fields (front-end, back-end, full-stack dev).</li>
+                <li>Innovate tech: Learn web dev to contribute to innovative projects like web apps, mobile apps, and virtual and augmented reality.</li>"},
+                {:name => "<h3><b>What skills will I master with this web developer course?</b></h3>",
+                :desc => "Skills you will master with this web developer course are:
+                <li>Proficiency in HTML, CSS, and JavaScript to build visually appealing and interactive websites.</li>
+                <li>Web programming fundamentals, DBMS, and web frameworks like ReactJS and NodeJS</li>
+                <li>Solve complex problems using programming constructs and data structures</li>
+                <li>Experience with full-stack development and data engineering, including skills in MVC, SQL, REST APIs, and big data processing</li>
+                <li>Advanced skills in competitive programming and product management, including topics like combinatorics, product thinking, probability, and project management.</li>"}]})
+        content.merge!(:glance => {:heading => "<h2><span class='highlight'>Key highlights</span> of the Scaler Academy's <b>Web Developer Course</b></h2>",
                 :sub_heading => "Learn Web Development as part of the Scaler Academy course and get a head-start on your career as a Web Developer.",
                 :cards => [{:img => "academy/svg/at-a-glance/structured.svg", :title => "<b>Structured, 
                 industry-vetted curriculum</b>"},
@@ -580,7 +576,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     }
                     ]
                     })
-        content.merge!(:career => {:heading => "<span class=\"highlight\">Career Services</span>", 
+        content.merge!(:career => {:heading => "<h2><span class=\"highlight\">Career Services</span></h2>", 
                 :sub_heading => "Along with upskilling and preparing you to be a solid engineer, we will help 
                 you with your job search and interview preparation as well!", 
                 :cards => [{:img => "academy/svg/employer.svg", :content => "Access job opportunities 
@@ -704,7 +700,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     "job_description"=>"You will have access to job postings and evaluation tests across our 500+ employer partners. 
                     These employers are across sizes and industries 
                     (tech MNCs and startups, software product, BFSI) and we strive to help you in case you need a referral"})
-        content.merge!(:testimonials => {:heading => "<h2>Our success <span class=\"highlight\">lies in our learners</span> success stories</h2>", 
+        content.merge!(:testimonials => {:heading => "Our success <span class=\"highlight\">lies in our learners</span> success stories", 
                     :sub_title => "Read the reviews by Scaler Alumni on how Scaler Academy Program has helped them become solid certified Web Developers",
                     :content => [{:id => "testimonial_modal_A1", :personImage => "academy/testimonial_images/Mayur.png", :name => "Mayur Kharche", 
                     :title => "SDE3", :companyName => "walmart", :mediumName => "Scaler", :mediumUrl => "academy/svg/scaler-logo.svg", 
@@ -858,30 +854,160 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :linkedin => "https://www.linkedin.com/in/nipun-suradkar-5840b1171/"}]})
         content.merge!(:join => {:heading => "Connect with an Academic Counsellor", :button => [{:id => "request_callback__one", 
                     :text => "REQUEST A CALLBACK", :link => ""}]})
-        content.merge!(:tuition_fee => {:heading => "<b>Tuition Fee<b>", :title_img => "academy/svg/money-logo.svg", 
+        content.merge!(:tuition_fee => {:heading => "<b>Web Development Course Fee<b>", :title_img => "academy/svg/money-logo.svg", 
                     :subtitle => "Total fee: Rs 3.19L inclusive of GST at super 
                     affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee 
                     if you choose to withdraw.", :title_content => "With EMI options, your payment can be as 
                     low as Rs 10,492 per month - that's like your monthly grocery bill!", 
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
-        faq_list1 = [{:heading => "<b>Are web developers in demand in 2021?</b>", 
-                    :desc => "Yes, they are highly demanded. For those who don't know, web development 
-                    is one of the rapidly growing and popular industries in the world. Many reports 
-                    suggest the need for web developer jobs will grow by thirteen percent in the coming years."},
-                    {:heading => "<b>What skills do you need to become a web developer?</b>", 
-                    :desc => "In order to be a successful web developer you must be: 
-                    <li>Interested in HTML, CSS</li> <li>Familiar with debugging, testing, and SEO</li>
-                    <li>Understand UX/UI</li> <li>Interested in javascript, backend, frontend, bootstrap</li>
-                    <li>Interactive and observant</li> <li>Adaptive & open to change</li>"},
-                    {:heading => "<b>What does a web developer do?</b>", 
-                    :desc => "The job of a web developer is to create, design, maintain, and update websites. 
-                    They take care of all the technical aspects, functionality, performance, capacity through 
-                    various programming tools. Other than this, web developers are responsible for debugging 
-                    and installing application features as well as for integrating security measures."},
-                    {:heading => "<b>Will I get a web development certification?</b>", 
-                    :desc => "After the end of the course, you will receive a course completion certificate."}]
-        content.merge!(:faq => {:main => [{:heading => "Program", :list => faq_list1}]})
-
+        content.merge!(:questions => {:heading => "<h2><b><span class = 'highlight'>Web Development</span> Course FAQs</b></h2>", 
+        :list => [
+        {:question => "What is Scaler Academy’s online web development program?", 
+        :answer => "Scaler Academy’s online web development program is a comprehensive course designed to teach web development concepts, tools, and techniques. 
+        It covers a range of topics such as programming fundamentals, data structures, algorithms, software and system design, and specialization in full-stack development or data engineering. 
+        The curriculum also includes projects and assignments to provide practical experience to students."},
+        {:question => "How this Web Developer program is different from other programs?", 
+        :answer => "What sets Scaler Academy's web development program apart is its - 
+        <li>Well structured, industry-vetted curriculum.</li>
+        <li>Live classes led by faculty members with hands-on experience.</li>
+        <li>Intensive practical experience through real-life projects and applications.</li>
+        <li>Regular 1:1 mentorship from product industry veterans.</li>
+        <li>Offers career services like access to job opportunities, mock interviews, and resume building.</li>"},
+        {:question => "Who is eligible for Scaler Academy’s online Web developer courses?", 
+        :answer => "Software engineers with any number of years of experience can choose to join Scaler Academy’s Web developer program. 
+        Applicants currently in college (1st, 2nd, 3rd, or final year of college) could consider joining Scaler Edge, our college student-focused product. 
+        Please visit www.scaler.com/edge for more detail."},
+        {:question => "When are the live classes held?", 
+        :answer => "Live classes are normally held 2 times a week, with the exact class days and timings being determined by the batch. 
+        However, given all learners would be software engineers that are currently working, the classes would be held in the late evening or night on weekdays and any suitable time over the weekends."},
+        {:question => "What happens if I miss a lecture in this online web developer course?", 
+        :answer => "All lectures are recorded and you will have access to the recordings after the lecture is completed."},
+        {:question => "Can I attend this web developer training part-time?", 
+        :answer => "The program has a fixed schedule, during which you would attend live lectures with a dedicated instructor, Teaching Assistant, and personal mentor. 
+        The 15-hour weekly commitment is required for the duration of the program in order to achieve positive results."},
+        {:question => "Are web developers in demand in 2023?", 
+        :answer => "Web development remains a highly in-demand and popular skill in 2023, with ample job opportunities and competitive salaries across the world. 
+        It is an excellent career choice, particularly for those who want to enter a higher-paying field without a traditional university degree."},
+        {:question => "Will I get a web developer certification?", 
+        :answer => "Yes, you will receive a course completion certificate upon successful completion of the course, which verifies your newly acquired skills and knowledge."},
+        {:question => "What does a Web Developer do?", 
+        :answer => "Web Developers are responsible for designing and maintaining websites. 
+        Also, managing technical aspects like speed, performance, and capacity. 
+        Additionally, they may create website content and optimize it for search engines."},
+        {:question => "What is the average salary for a Web developer?", 
+        :answer => "The average salary for a web developer varies by country and experience level. 
+        According to Glassdoor, the average salary is ₹9,88,940 per year for a Web Developer in India. 
+        In the United States, the average salary for a Web Developer is $73,425 per year."},
+        {:question => "How web developers are different from software engineers?", 
+        :answer => "Web developers focus on designing and building websites and web applications, while software engineers specialize in creating programs for operating systems. 
+        However, the roles and responsibilities may overlap as technology continues to evolve."},
+        {:question => "Is Web development difficult to learn?", 
+        :answer => "Learning the basics of Web development is relatively easy, but becoming proficient requires continuous learning and practice over a long period of time."},
+        {:question => "What level of coding proficiency is necessary to be successful as a web developer?", 
+        :answer => "One needs to have a good understanding of HTML, CSS, and JavaScript. Also, knowledge of frameworks and libraries like React, Angular, and Vue.js."},
+        {:question => "Should I join the Beginner, Intermediate, or Advanced section of this online web development course?", 
+        :answer => "Your eligibility for the Beginner, Intermediate, or Advanced section is decided basis of a 30-minute entrance test."},
+        {:question => "What is the duration of this web development online program?", 
+        :answer => "Depending on which section you are allotted, the duration of the course could range from 9 to 13 months."},
+        {:question => "What are the prerequisites for enrolling in this web development training?", 
+        :answer => "Enrolling in this web developer program does not require any prerequisites. 
+        The program is designed to accommodate both beginners and experienced professionals looking to improve their web development skills. 
+        However, a 30-minute initial multiple-choice question (MCQ) test will be conducted to assess your fundamental knowledge."},
+        {:question => "What is the format of the initial 30 min test?", 
+        :answer => "The test will comprise of Multiple Choice Questions (MCQs) on the following topics:
+        <li>Logical reasoning and aptitude</li>
+        <li>Basic mathematics (topics like permutation and combinations, probability etc.)</li>
+        <li>Basic time complexity analysis</li>
+        <li>Questions on figuring out the outputs of small code snippets (in any of C++/Java/Python)</li>"},
+        {:question => "Can this test be taken on mobile?",
+        :answer => "Yes! We have designed the test so that it can be easily taken on mobile as well. 
+        However, for best results, we would advise you to take the test in a quiet setting with minimal disruptions."},
+        {:question => "Do I need to prepare for this initial 30 min test?",
+        :answer => "No, you do not need any special preparation for this test. 
+        However, if you would like, you could brush up on simple concepts like arrangement, derangement, and a few simple aptitude questions."},
+        {:question => "What is the role of the tutor in this course?",
+        :answer => "Our tutors would teach you the concepts mentioned in the course curriculum and would take live classes 3 times a week. 
+        There would be different tutors teaching different topics"},
+        {:question => "What are the profiles of the tutors?",
+        :answer => "Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. 
+        They have hands-on, real-life experience and don't just have theoretical knowledge. 
+        For more detail on our tutors, please visit www.scaler.com/academy"},
+        {:question => "How will my doubts get solved?",
+        :answer => "We have 100+ Teaching Assistants that would solve your doubts in prompt-manner. 
+        These doubts could be related to the class content or regarding the assignments."},
+        {:question => "What is the role of the Teaching Assistant in this course?",
+        :answer => "Teaching Assistants (TAs) work closely with the tutors to help students with their assignments and homework. 
+        They answer students' doubts via chat and video call. 
+        You would interact with TA's regularly outside of the live-class sessions to get more hands-on problem-solving experience."},
+        {:question => "What are the profiles of the Teaching Assistants?",
+        :answer => "Teaching Assistants (TAs) mostly come from strong problem-solving backgrounds. 
+        They can be from a range of experiences but share a common interest towards coding and teaching alike."},
+        {:question => "How many Teaching Assistants are allotted per batch?",
+        :answer => "2 Teaching Assistants (TAs) are allotted per batch of 40-50 students. 
+        This ensures each student gets enough time with their TA and gets their queries resolved instantly."},
+        {:question => "What is the process of resolving doubts?",
+        :answer => "If a student has a question, they can submit a 'Help Request' which will be shared with their peers to promote a sense of community and collaboration. 
+        At the same time, the Teaching Assistant will be notified of the request. 
+        The student's query can be addressed either through peer discussion or by the Teaching Assistant via text or video call. 
+        In case of a video call, the Teaching Assistant can share their screen to provide a better understanding of the concept. 
+        These video calls are conducted on a one-to-one basis."},
+        {:question => "What is the role of the mentor?",
+        :answer => "Mentors provide personalized advice on your career. 
+        They also help you with mock interviews, help with your resume and provide career advice. 
+        Mentors do 1:1 video calls with you for 30-60 mins each for each session. 
+        It is advisable to do 2 mentor sessions every month."},
+        {:question => "What are the profiles of the mentors?",
+        :answer => "Our mentors mostly work at tier-1 product companies and would be experienced software professionals. 
+        For more information, please visit www.scaler.com/mentor"},
+        {:question => "How many mentors are allotted per batch?",
+        :answer => "Based on your background, we offer a few mentors for you to choose from at the beginning of the course. 
+        You could choose 1 mentor of your choice from this pool. 
+        We try to ensure that your mentor is relatable to your background."},
+        {:question => "Can I change my mentor?",
+        :answer => "We would entertain a request to change a mentor, but a change in mentor is done only on a case-by-case basis."},
+        {:question => "What kind of placement support will I be given after this course?",
+        :answer => "We provide three kinds of placement support once you complete this web developer course:
+        <li>Through our network with hundreds of employer partners, we would arrange for you to have access to job opportunities in order to accelerate your career or change companies.</li>
+        <li>Our student, tutor and mentor community frequently posts job opportunities from their network as well, via ScalerChat (please visit www.scaler.com/mentor for details)</li>
+        <li>Preparation assistance via mock interviews, resume reviews etc
+        With the right teaching, curriculum and guidance, we are confident you will achieve your goals.</li>"},
+        {:question => "Could someone help me do mock interviews?",
+        :answer => "Absolutely! We aim to assist you in getting ready for your job interviews by conducting mock interviews. 
+        There are two options for mock interviews:
+        <li>Students can opt to have mock interviews with their mentors (as mentioned in the 'Mentor' section of these FAQs).</li>
+        <li>We can link you up with a working professional from the company where you have an interview scheduled. 
+        This will give you a better understanding of the company and help you prepare for a more targeted mock interview.</li>"},
+        {:question => "What are the top companies hiring Full Stack Developers?",
+        :answer => "There are many companies hiring web developers, but some of the top ones are:
+        <li>Amazon</li>
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>Apple</li>
+        <li>Facebook</li>
+        <li>Uber</li>
+        <li>Airbnb</li>
+        <li>IBM</li>
+        <li>Salesforce</li>
+        <li>Paypal</li>"},
+        {:question => "What kind of roles do employers hire for?",
+        :answer => "Employers hire for a wide variety of roles, including full-stack engineering and backend engineering across a range of work experience. 
+        We would be careful to ensure that you apply to companies that match your qualifications and strengths."},
+        {:question => "When would employers come to Scaler Academy to hire web developers?",
+        :answer => "Employers typically hire web developers all through the year, depending on their requirements. 
+        When employers do approach us, we would make the opportunity visible to students in the batch. 
+        Students are welcome to apply for opportunities that interest them. 
+        Each opportunity would have a test associated with it and students would be referred based on their performance in these tests and other factors like attendance and their problem-solving percentage."},
+        {:question => "What is the total tuition fee?",
+        :answer => "The total tuition fee including GST is INR 3.19L. 
+        With EMI, this can drop as low as ~INR 10,492/month (equivalent to your monthly grocery bill!)"},
+        {:question => "Are there scholarships?",
+        :answer => "Yes!
+        Way of getting exciting scholarships at Scaler Academy
+        Get up to INR 25,000 as scholarship basis your performance in the 30 minutes entrance test!"},
+        {:question => "Can I pay in EMIs?",
+        :answer => "Yes! Via our NBFC partners, we provide a range of EMI options, from zero-interest EMI options (upto 12 months) and longer tenure loans of 24 months and 36 months. 
+        The longer tenure loans of 24 months and 36 months will include the interest cost."},
+        ]})
         CoursePageTemplateService.new(
             title: "Web Development",
             content: content
