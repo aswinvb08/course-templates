@@ -2,7 +2,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
   def up
     return unless Rails.is_scaler?
 
-    Course.find_by(:slug => "system-design-course")&.destroy
+    Course.find_by(:slug => "system-design")&.destroy
     faq_list1 = [{:heading => "<b>Is there a way to improve my skills in System Design?</b>", 
         :desc => "To improve your system design skills, you must first gain specific knowledge 
         and master system design basics. Don't worry; we have prepped all that for you. Our 
