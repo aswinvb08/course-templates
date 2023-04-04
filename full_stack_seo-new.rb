@@ -683,15 +683,15 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           :answer => "No, we feel that before jumping into a full-stack module, you must learn the basics of programming, cs fundamentals, and Data Structures & Algorithms. 
                           These skills are essential to have before you can begin with a full-stack specialization."},
                           {:question => "What are the roles and responsibilities of a Full Stack Developer?",
-                          :answer => "<a href='https://www.scaler.com/topics/software-engineering/full-stack-developer-job-description/'>Full stack developers</a> are computer programmers who are proficient in both front and back end coding- 
+                          :answer => "<a href='https://www.scaler.com/topics/software-engineering/full-stack-developer-job-description/'><u>Full stack developers</u></a> are computer programmers who are proficient in both front and back end coding- 
                           <li>Designing user interactions on websites</li>
                           <li>Developing servers and databases for website functionality.</li>
                           <li>Coding for mobile platforms.</li>
                           <li>Designing & developing APIs</li>"},
                           {:question => "What is the average salary for a Full Stack developer?",
-                          :answer => "According to <a href='https://www.glassdoor.co.in/Salaries/full-stack-developer-salary-SRCH_KO0,20.htm'>Glassdoor</a>, the average salary for Full Stack Developers is INR 5,50000 per year in India. 
+                          :answer => "According to <a href='https://www.glassdoor.co.in/Salaries/full-stack-developer-salary-SRCH_KO0,20.htm' rel='nofollow'><u>Glassdoor</u></a>, the average salary for Full Stack Developers is INR 5,50000 per year in India. 
                           Full Stack Developers earn an average salary of USD 98,524 in the United States. 
-                          For more detailed information, you can visit this <a href='https://www.scaler.com/topics/software-engineering/full-stack-engineer-salary/'>blog</a>."},
+                          For more detailed information, you can visit this <a href='https://www.scaler.com/topics/software-engineering/full-stack-engineer-salary/'><u>blog</u></a>."},
                           {:question => "How are Full stack developers different from software engineers?",
                           :answer => "While Full Stack Developers focus on web applications, Software Engineers specialize in native apps. 
                           And while the term Software Engineer is broad and could mean a variety of things, a Full Stack Developer's skill set is laser-focused on web development"},
@@ -724,7 +724,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           :answer => "Our tutors would teach you the concepts mentioned in the course curriculum and would take live classes 3 times a week. 
                           There would be different tutors teaching different topics"},
                           {:question => "What are the profiles of the tutors?",
-                          :answer => "Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. They have hands-on, real-life experience and don't just have theoretical knowledge. For more detail on our tutors, please visit <a href='https://www.scaler.com/academy'>www.scaler.com/academy</a>"},
+                          :answer => "Our tutors have built scalable systems in the past and understand the real-life importance of DSA and System Design, not just interview-relevant material. They have hands-on, real-life experience and don't just have theoretical knowledge. For more detail on our tutors, please visit <a href='https://www.scaler.com/academy'><u>www.scaler.com/academy</u></a>"},
                           {:question => "How will my doubts get solved?",
                           :answer => "We have 100+ Teaching Assistants that would solve your doubts in prompt-manner. 
                           These doubts could be related to the class content or regarding the assignments."},
@@ -766,7 +766,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           {:question => "What kind of placement support will I be given?",
                           :answer => "We provide three kinds of placement support once you complete this full stack course:
                           <li>Through our network with hundreds of employer partners, we would arrange for you to have access to job opportunities in order to accelerate your career or change companies.</li>
-                          <li>Our student, tutor and mentor community frequently posts job opportunities from their network as well, via ScalerChat (please visit <a href='https://www.scaler.com/mentor'>www.scaler.com/mentor</a> for details)</li>
+                          <li>Our student, tutor and mentor community frequently posts job opportunities from their network as well, via ScalerChat (please visit <a href='https://www.scaler.com/mentor'><u>www.scaler.com/mentor</u></a> for details)</li>
                           <li>Preparation assistance via mock interviews, resume reviews etc
                           With the right teaching, curriculum and guidance, we are confident you will achieve your goals.</li>"},
                           {:question => "Could someone help me do mock interviews?",
