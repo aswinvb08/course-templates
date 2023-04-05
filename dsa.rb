@@ -3,10 +3,13 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
     return unless Rails.is_scaler?
 
     Course.find_by(:slug => "data-structures-and-algorithms")&.destroy
-      content = {:metadata => {:program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
+      content = {:metadata => {:jsonld => "true", :program => "academy", :header => "", :links => [{:url => "#curriculum", :text => "Curriculum"}, 
               {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
               {:url => "#testimonial", :text => "Review"}, {:url => "#faq", :text =>"FAQ"}]}}
-      content.merge!(:banner => {:heading => "<h1><b>Master Data Structures and Algorithms With the Scaler Academy Program</b></h1>", 
+      content.merge!(:banner => {:breadcrumb => [{:cta => "Home", :link => "https://www.scaler.com/"}, 
+              {:cta => "<b>Academy</b>", :link => "https://www.scaler.com/academy/"},
+              {:cta => "<b>Data Structures And Algorithms</b>"}],
+              :heading => "<h1><b>Master Data Structures and Algorithms With the Scaler Academy Program</b></h1>", 
               :content => ["Secure product interviews with understanding of crucial data structures and algorithms, and their implementation", 
               "Build intuition on the inner workings of various DSA, a foundational skill for any top software engineer", 
               "Clear your concepts and know which data structure to use for the most optimum build"],
