@@ -644,7 +644,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
        
       content.merge!(:join => {:heading => "Connect with an Academic Counsellor",
                          :button => [{:id => "request_callback__one", :text => "REQUEST A CALLBACK", :link => ""}]}) 
-      content.merge!(:tuition_fee => {:heading => "<b>Full Stack Development Course Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs 3.49L inclusive of GST at super affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With scholarship & EMI options, your payment can be as low as Rs. 8,112 per month - that's like your monthly 
+      content.merge!(:tuition_fee => {:heading => "<b>Full Stack Development Course Fee<b>", :title_img => "academy/svg/money-logo.svg", :subtitle => "Total fee: Rs 3.59L inclusive of GST at super affordable EMI options. Try the course for the first 2 weeks - full money-back guarantee if you choose to withdraw.", :title_content => "With scholarship & EMI options, your payment can be as low as Rs. 8,370 per month - that's like your monthly 
                           grocery bill!", :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]})
       content.merge!(:questions => {:heading => "<h2><b><span class = 'highlight'>Full Stack Web Development</span> Course FAQs</b></h2>", 
                           :list => [
@@ -795,7 +795,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                           Students are welcome to apply for opportunities that interest them. 
                           Each opportunity would have a test associated with it and students would be referred based on their performance in these tests and other factors like attendance and their problem-solving percentage."},
                           {:question => "What is the total tuition fee?",
-                          :answer => "The total tuition fee including GST is INR 3.49. With EMI, this can drop as low as ~INR 8,112/month (equivalent to your monthly grocery bill!)"},
+                          :answer => "The total tuition fee including GST is INR 3.59. With EMI, this can drop as low as ~INR 8,370/month (equivalent to your monthly grocery bill!)"},
                           {:question => "Are there scholarships?",
                           :answer => "Yes!
                           Way of getting exciting scholarships at Scaler Academy
