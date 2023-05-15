@@ -744,7 +744,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                     :buttons => [{:id => "tuition_modal_one", :text => "VIEW EMI PLANS", :link => ""}]}} 
   
       CoursePageTemplateService.new(
-        title: "Data Science Machine Learning Course",
+        title: "Data Science Machine Learning Course V2",
         content: content
       ).execute
     end
