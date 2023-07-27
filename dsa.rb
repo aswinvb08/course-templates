@@ -63,7 +63,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
               :sub_heading => "Along with upskilling and preparing you to be a solid engineer, we will help 
               you with your job search and interview preparation as well!", 
               :cards => [{:img => "academy/svg/employer.svg", :content => "Access job opportunities 
-              from our <b>100+ employer partners</b>"}, {:img => "academy/svg/community.svg", 
+              from our <b>600+ employer partners</b>"}, {:img => "academy/svg/community.svg", 
               :content => "Exchange job opportunities with our extensive <b>20K+ Scaler student 
               community</b>"}, {:img => "academy/svg/mock.svg", :content => "<b>Practice mock interviews</b> 
               with <b>people working in the industry</b>"}, {:img => "academy/svg/resume.svg", 
@@ -180,7 +180,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                   "Some of his mentees have joined Nova (part of Flock) and Microsoft."], 
                   :linkedin => "https://www.linkedin.com/in/shanmehrotra/"}], 
                   "job_heading"=>"Job Opportunities", "job_image"=>"academy/svg/job.svg", 
-                  "job_description"=>"You will have access to job postings and evaluation tests across our 500+ employer partners. 
+                  "job_description"=>"You will have access to job postings and evaluation tests across our 600+ employer partners. 
                   These employers are across sizes and industries 
                   (tech MNCs and startups, software product, BFSI) and we strive to help you in case you need a referral"})
       content.merge!(:testimonials => {:heading => "<h2>Our success <span class=\"highlight\">lies in our learners</span> success stories", 
