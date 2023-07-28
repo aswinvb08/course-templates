@@ -701,7 +701,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 :career_alt => {:heading => "We also <b><span class=\"highlight\">help you prepare for</span> your job search and your interviews</b>", 
                     :cards => [
                     {:img => "data_science/svg/community.svg", :content => "Exchange job opportunities with our <b>20,000+ Scaler student community</b>."},    
-                    {:img => "data_science/svg/employer.svg", :content => "Access job opportunities from more than <b>180 employer partners</b> of Scaler"},  
+                    {:img => "data_science/svg/employer.svg", :content => "Access job opportunities from more than <b>600 employer partners</b> of Scaler"},  
                     {:img => "data_science/svg/mock.svg", :content => "Get ready for job interviews by<b> practicing mock interviews</b> with <b>industry professionals.</b>"}, 
                     {:img => "data_science/svg/resume.svg", :content => "Keep your resume & LinkedIn profile optimized with guidance of our <b>experts</b>"}]},
                 :partners => {:heading => "<h2><span class=\"highlight\">Scaler's <b>alumni</b> work</span> at 

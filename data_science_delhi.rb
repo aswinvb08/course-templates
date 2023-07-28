@@ -2,7 +2,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
     def up
       return unless Rails.is_scaler?
   
-      Course.find_by(:slug => "data-science-course-training-in-delhi")&.destroy
+      Course.find_by(:slug => "data-science-course-in-delhi")&.destroy
       content = {:metadata => {:jsonld => "true", :next_batch_details => {:course_slug => "ds", :course_type => "intermediate"}, :program => "data-science", :header => {:logo => "scaler/png/scaler-data-science.png", :path => "/data-science-course/", :logo_alt => "Scaler Data Science"}, 
                     :links => [{:url => "#curriculum", :text => "Curriculum"}, 
                     {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
@@ -714,7 +714,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                 :join_alt => {:heading => "Connect with an <b>Academic Counsellor</b>", :subheading => "Get all the information about scholarships and low cost EMI options", 
                     :desc => "<b>Eligibility:</b> Anyone who graduated in 2022 or before"},
                 :career_alt => {:heading => "We also <b><span class=\"highlight\">help you prepare for</span> your job search and your interviews</b>", 
-                    :cards => [{:img => "data_science/svg/employer.svg", :content => "Access job opportunities from our <b>180+ employer partners</b>"}, 
+                    :cards => [{:img => "data_science/svg/employer.svg", :content => "Access job opportunities from our <b>600+ employer partners</b>"}, 
                     {:img => "data_science/svg/community.svg", :content => "Exchange job opportunities with our <b>20K+ Scaler student community</b>'"}, 
                     {:img => "data_science/svg/mock.svg", :content => "<b>Practice mock interviews</b> with <b>people working in the industry</b>"}, 
                     {:img => "data_science/svg/resume.svg", :content => "Optimize your resume & LinkedIn profile with our <b>experienced experts</b>"}]},
@@ -816,7 +816,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         {:cta => "Data Science Course in Hyderabad", :link => "/courses/data-science-course-training-in-hyderabad"}]}} 
   
       CoursePageTemplateService.new(
-        title: "Data Science Course Training In Delhi",
+        title: "Data Science Course In Delhi",
         content: content
       ).execute
     end
