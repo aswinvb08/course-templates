@@ -2,7 +2,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
     def up
       return unless Rails.is_scaler?
   
-      Course.find_by(:slug => "data-science-course-training-in-delhi")&.destroy
+      Course.find_by(:slug => "data-science-course-in-delhi")&.destroy
       content = {:metadata => {:jsonld => "true", :next_batch_details => {:course_slug => "ds", :course_type => "intermediate"}, :program => "data-science", :header => {:logo => "scaler/png/scaler-data-science.png", :path => "/data-science-course/", :logo_alt => "Scaler Data Science"}, 
                     :links => [{:url => "#curriculum", :text => "Curriculum"}, 
                     {:url => "#careers", :text => "Placement"}, {:url => "#mentors", :text => "Mentor"}, 
@@ -816,7 +816,7 @@ class AddCoursesSeoPageContent < ActiveRecord::Migration[5.1]
                         {:cta => "Data Science Course in Hyderabad", :link => "/courses/data-science-course-training-in-hyderabad"}]}} 
   
       CoursePageTemplateService.new(
-        title: "Data Science Course Training In Delhi",
+        title: "Data Science Course In Delhi",
         content: content
       ).execute
     end
